@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*属性选择器可以配合上下文关系实现派生使用*/
+
+        /*[属性]查询设置了包含此属性并且属性值与选择器设置相同的元素*/
+        p [type] {
+            outline: 2px solid #ff5000;
+        }
+
+        /*[属性=属性值]查询设置了包含了此属性并且属性值与选择器设置相同的元素*/
+        p [type=password] {
+            outline: 1px solid blue;
+        }
+
+        /*ccs3属性选择器,name属性值以nick开头的元素*/
+        [name^=nick] {
+            background-color: red;
+        }
+
+        /*ccs3属性选择器,name属性值以me结尾的元素*/
+        [name$=me] {
+            background-color: green;
+        }
+
+        /*ccs3属性选择器,name属性值包含ni单词的元素*/
+        [name*=ni] {
+            background-color: pink;
+        }
+
+
+    </style>
+</head>
+<body>
+<p>
+    <label>
+        <input type="text">
+        <input type="password">
+        <input type="text" name="user-name">
+        <input type="text" name="nick-name">
+        <input type="text" name="user name">
+        <input type="text" name="nickname">
+    </label>
+
+</p>
+</body>
+</html>

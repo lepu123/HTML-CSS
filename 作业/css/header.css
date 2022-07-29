@@ -1,0 +1,187 @@
+body {
+    background-color: #f6f6f6;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 165px;
+}
+
+.top-nav {
+    width: 100%;
+    height: 35px;
+}
+
+.top-nav-container {
+    height: 35px;
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.group-city {
+    float: left;
+    width: 106px;
+    height: 35px;
+}
+
+.group-city a {
+    line-height: 35px;
+}
+
+.group-city .map {
+    float: left;
+    width: 30px;
+    height: 35px;
+}
+
+.group-city a {
+    font-size: 12px;
+    height: 35px;
+}
+
+.group-city a:link {
+    color: black;
+}
+
+.group-city a:visited {
+    color: black;
+}
+
+.top-logo-input {
+    height: 95px;
+}
+
+.group-menu {
+    float: right;
+}
+
+.group-menu .item {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 0 17px;
+
+}
+
+.group-menu span {
+    line-height: 35px;
+    color: #c7c7c7;
+}
+
+.group-menu .item:link {
+    color: black;
+}
+
+.group-menu .item:visited {
+    color: black;
+}
+
+.group-menu .item:hover {
+    color: #ff5000;
+}
+
+.top-logo-input {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.log-input {
+    margin: 0 auto;
+    width: 1190px;
+    height: 95px;
+    background-color: #ffffff;
+}
+
+.logo,
+.logo img {
+    float: left;
+    width: 210px;
+    height: 57px;
+    margin-top: 10px;
+    margin-right: 140px;
+}
+
+.search {
+    position: relative;
+    margin-top: 30px;
+    float: left;
+}
+
+.search input {
+    padding: 9px;
+    width: 380px;
+    border: 2px solid #f63;
+    text-indent: 22px;
+}
+
+.search i {
+    left: 10px;
+    position: absolute;
+    margin-top: 10px;
+    float: left;
+    height: 20px;
+    width: 20px;
+}
+
+.log-input button {
+    color: #fff;
+    border: #ffffff;
+    background-color: #f63;
+    height: 39px;
+    width: 120px;
+    margin-top: 27px;
+    font-size: 16px;
+    float: left;
+}
+
+.navbar {
+    height: 35px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.navbar .nav-background {
+    width: 1190px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.navbar .nav-background .nav-class{
+    width: 210px;
+    height: 35px;
+    font-size: 15px;
+    background-color: #FF6B37;
+    color: #fff;
+    padding-left: 15px;
+    float: left;
+}
+
+.navbar .nav-background .nav-class p {
+    line-height: 35px;
+    font-weight: bold;
+}
+
+.navbar .nav-background a {
+    float: left;
+    font-size: 15px;
+    line-height: 35px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.navbar .nav-background a:link {
+    color: black;
+}
+
+.navbar .nav-background a:visited {
+    color: black;
+}
+
+.navbar .nav-background a:hover {
+    color: #FF6B37;
+}

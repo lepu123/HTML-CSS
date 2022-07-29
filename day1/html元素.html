@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .middle-list,
+        .small-list {
+            display: none;
+        }
+
+        .big-list > li:hover .middle-list {
+            display: block;
+        }
+
+
+        .middle-list > li:hover .small-list {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <!--  标签元素里面不能嵌套块级元素 !!! -->
+    <h1>hello world</h1>
+
+
+    <ul class="big-list">
+        <li>
+            HTML
+            <ul class="middle-list">
+                <li>h标签</li>
+                <li>a标签</li>
+                <li>p标签</li>
+                <li>i标签</li>
+            </ul>
+        </li>
+        <li>
+            CSS
+            <ul class="middle-list">
+                <li>选择器</li>
+                <li>盒子模型</li>
+                <li>浮动</li>
+                <li>定位</li>
+                <li>
+                    形变
+                    <ul class="small-list">
+                        <li>偏移</li>
+                        <li>缩放</li>
+                        <li>旋转</li>
+                    </ul>
+                </li>
+            </ul>
+
+        </li>
+
+        <li>
+            JavaScript
+            <ul class="middle-list">
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </li>
+
+    </ul>
+    <!--    <ol>-->
+    <!--        <li>link1</li>-->
+    <!--        <li>link2</li>-->
+    <!--        <li>link3</li>-->
+    <!--        <li>link4</li>-->
+    <!--        <li>link5</li>-->
+    <!--    </ol>-->
+
+    <!--
+    自定义列表
+    dl 自定义列表
+    dt
+      -->
+    <dl>
+        <dt>广东</dt>
+        <dd>广州</dd>
+        <dd>韶关</dd>
+        <dd>深圳</dd>
+        <dd>肇庆</dd>
+        <dd>茂名</dd>
+        <dd>潮汕</dd>
+    </dl>
+</div>
+</body>
+</html>

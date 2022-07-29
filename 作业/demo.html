@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .container {
+            /*移动端设置全屏*/
+            width: 100vw;
+            height: 100vh;
+        }
+
+        /*
+            css的属性书写顺序有规范   最能影响页面布局的往前写，对页面布局影响越小的越后写
+            display
+            position
+            float
+            盒子模型    外边距 边框  内边距 宽高
+            字体
+            颜色
+            背景
+            z-index
+        */
+
+        .tab-bar {
+            position: sticky;
+            top: 0;
+            height: 40px;
+            background-color: #fff;
+        }
+
+        .tab-bar .tab-bar-item {
+            width: 33.3%;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .tab-bar .tab-bar-item {
+            font-size: var(--tab-text);
+        }
+
+        .tab-bar .tab-bar-item span {
+            display: inline-block;
+            height: 40px;
+        }
+
+        .tab-bar .tab-bar-item span:active {
+            border-bottom: 2px solid var(--theme-red);
+            color: var(--theme-red);
+        }
+
+        .hot-top {
+            position: relative;
+            width: 100vw;
+            height: 38.9vw;
+            background-image: url("./image/hot-music.jpg");
+            background-size: contain;
+        }
+
+        .hot-top .title-img {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 142px;
+            height: 67px;
+            background-image: url("./image/index-icon.png");
+            background-size: 166px 97px;
+            background-position: -24px -127px;
+            overflow: hidden;
+            z-index: 2;
+        }
+        .hot-top .hot-time {
+            position: absolute;
+            top: 95px;
+            left: 20px;
+            font-size: var(--hottime-text);
+            color: #fff;
+            z-index: 2;
+        }
+
+        .hot-top::after {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(7,17,27,.2);
+            content: '';
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="tab-bar">
+        <div class="tab-bar-item float-l"><span>推荐音乐</span></div>
+        <div class="tab-bar-item float-l"><span>热歌榜</span></div>
+        <div class="tab-bar-item float-l"><span>搜索</span></div>
+    </div>
+    <div class="hot-top">
+        <div class="title-img"></div>
+        <p class="hot-time">更新日期：7月20日</p>
+    </div>
+    <ul>
+        <li class="music-item">
+            <div class="rank-num">01</div>
+            <div class="music-desc">
+                <h2>再见莫妮卡</h2>
+                <p>彭席彦/Franky弗兰奇-再见莫妮卡</p>
+                <i class="play-icon"></i>
+            </div>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

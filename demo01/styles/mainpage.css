@@ -1,0 +1,583 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-wrap {
+            background-color: #eee;
+        }
+
+        .nav {
+            /* 让导航居中 */
+            margin: 0 auto;
+            width: 990px;
+            /* 设置导航字体12像素 */
+            font-size: 12px;
+            line-height: 24px;
+            /* 设置每一行的高度18px */
+            /* height: 18px; */
+            color: #999;
+            /* 清除浮动 */
+            overflow: hidden;
+            /* background-color:; */
+        }
+
+        .float-l {
+            /* 让换行的元素浮动起来一行展示 */
+            float: left;
+        }
+
+        .nav-title {
+            margin-right: 20px;
+        }
+
+        .home-logo {
+            vertical-align: top;
+            /* 让图标通过外边距向下移动与文字对齐 */
+            margin-top: 4px;
+            /* i元素宽度高度无效，设置inline-block元素在不换行的情况下支持宽高属性  */
+            display: inline-block;
+            /* 文字和图标顶部对齐  */
+            width: 14px;
+            height: 14px;
+            /* 距离右边外边距，让图标和标题之间有些距离 */
+            margin-right: 2px;
+            /* background-color: green; */
+            /* 设置背景图片 */
+            background-image: url(../images/home.svg);
+            /* 设置背景图片的大小 */
+            background-size: 14px 14px;
+            /* 避免图片平铺 */
+            background-repeat: no-repeat;
+        }
+
+
+        .register em {
+            /* 取消em默认样式字体倾斜 */
+            font-style: normal;
+        }
+
+        .register a,
+        .nav-list li a {
+            display: inline-block;
+            /* 撑开超链接的宽度 */
+            padding-left: 20px;
+            color: #999;
+            /* 取消文字下划线 */
+            text-decoration: none;
+        }
+
+        /* :hove 鼠标悬停到该元素  */
+        .register a:hover,
+        .nav-list li a:hover {
+            /* 撑开超链接的宽度 */
+            color: #ff0025;
+            /* 添加文字下划线 */
+            text-decoration: underline;
+        }
+
+        /* 右浮动实现，展示块级元素右对齐  */
+        .float-r {
+            float: right;
+        }
+
+
+        .nav-list {
+            /* 清除列表小圆点 */
+            list-style: none;
+        }
+
+        .nav-list li {
+            margin-left: 5px;
+        }
+
+        .nav-list li a {
+            padding: 0 10px;
+
+        }
+
+        .nav-list li a:hover {
+            background-color: #fff;
+        }
+
+        .container {
+            padding-bottom: 20px;
+            width: 100%;
+            min-height: 600px;
+            background-image: url(../images/bg-img.png);
+            background-size:100% 100%;
+            background-repeat: no-repeat;
+        }
+
+
+        .search-wrap {
+            margin: 0 auto;
+            width: 1190px;
+            height: 111px;
+        }
+
+        .logo {
+            margin-top: 28px;
+            margin-left: 53px;
+            width: 87px;
+            height: 53px;
+        }
+
+
+
+        .search-bar {
+            margin: 36px 0 0 86px;
+            border: 1px solid #ff0025;
+            /* 边框圆角设置,实现胶囊效果 */
+            border-radius: 999px;
+            /* 让子元素超出父元素的部分隐藏 */
+            overflow: hidden;
+            background-color: #fff;
+        }
+
+        .search-bar input {
+            /* 取消输入框外边框 */
+            border: 0;
+            outline: 0;
+            height: 42px;
+            width: 524px;
+            /*给输入框加内边距,让文字不紧贴输入框*/
+            padding-left: 16px;
+
+        }
+
+        .search-bar .search {
+            display: inline-block;
+            width: 90px;
+            background-color: #ff0025;
+            height: 42px;
+            line-height: 42px;
+            text-align: center;
+            color: #fff;
+            border-radius: 999px;
+        }
+
+        .goods-wrapper {
+            width: 1150px;
+            /* 水平居中 盒子 */
+            margin: 0 auto;
+            /* 商品盒子内边距 */
+            padding: 20px;
+            /* 边框圆角设置 */
+            border-radius: 20px;
+            background-color: #fff;
+            overflow: hidden;
+        }
+
+        .theme-menu {
+            width: 212px;
+            /* height: 500px; */
+            /* background-color: yellow; */
+        }
+
+        .menu-title {
+            color: #fe0137;
+            font-size: 17px;
+            /* font-weight: 500; */
+        }
+
+        .menu-list {
+            margin-top: 24px;
+            padding-left: 5px;
+            list-style: none;
+            font-size: 15px;
+            color: #666;
+        }
+
+        .menu-list .menu-list-item {
+            margin-top: 16px;
+            line-height: 15px;
+        }
+
+        .menu-list .icon {
+            margin-right: 10px;
+            vertical-align: top;
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            /* background-color: aqua; */
+        }
+
+        .icon.dress {
+            background-image: url(../images/dress.svg);
+            background-size: 14px 14px;
+            background-repeat: no-repeat;
+        }
+
+        .icon.short-sleeve {
+            background-image: url(../images/short-sleeve.svg);
+            background-size: 14px 14px;
+            background-repeat: no-repeat;
+        }
+
+        .icon.shoes {
+            background-image: url(../images/shoes.svg);
+            background-size: 14px 14px;
+            background-repeat: no-repeat;
+        }
+
+        .icon.lipstick {
+            background-image: url(../images/lipstick.svg);
+            background-size: 14px 14px;
+            background-repeat: no-repeat;
+        }
+
+        .icon.diamond {
+            background-image: url(../images/diamond.svg);
+            background-size: 14px 14px;
+            background-repeat: no-repeat;
+        }
+
+        .icon.cell-phone {
+            background-image: url(../images/cell-phone.svg);
+            background-size: 14px 14px;
+            background-repeat: no-repeat;
+        }
+
+        .icon.baby-car {
+            background-image: url(../images/baby-car.svg);
+            background-size: 14px 14px;
+            background-repeat: no-repeat;
+        }
+
+        .icon.noddles {
+            background-image: url(../images/noddles.svg);
+            background-size: 14px 14px;
+            background-repeat: no-repeat;
+        }
+
+        .icon.cherry {
+            background-image: url(../images/cherry.svg);
+            background-size: 14px 14px;
+            background-repeat: no-repeat;
+        }
+
+        .icon.household {
+            background-image: url(../images/household.svg);
+            background-size: 14px 14px;
+            background-repeat: no-repeat;
+        }
+
+        .icon.building {
+            background-image: url(../images/building-material.svg);
+            background-size: 14px 14px;
+            background-repeat: no-repeat;
+        }
+
+        .icon.car {
+            background-image: url(../images/car.svg);
+            background-size: 14px 14px;
+            background-repeat: no-repeat;
+        }
+
+        .icon.sofa {
+            background-image: url(../images/sofa.svg);
+            background-size: 14px 14px;
+            background-repeat: no-repeat;
+        }
+
+        .icon.medicine {
+            background-image: url(../images/medicines.svg);
+            background-size: 14px 14px;
+            background-repeat: no-repeat;
+        }
+
+        .icon.coffee {
+            background-image: url(../images/coffee.svg);
+            background-size: 14px 14px;
+            background-repeat: no-repeat;
+        }
+
+        .icon.lock {
+            background-image: url(../images/lock.svg);
+            background-size: 14px 14px;
+            background-repeat: no-repeat;
+        }
+
+        .goods-banner {
+            width: 915px;
+            margin-left: 23px;
+            /* height: 400px; */
+            /* background-color: pink; */
+            margin-bottom: 30px;
+        }
+
+        .tmall-types {
+            /* 将子元素之间换行符(在页面中以空格展示)大小设置为0 */
+            font-size: 0;
+        }
+
+        /* 鼠标悬停文字高亮 */
+        .tmall-types .high-light:hover {
+            color: #fe0137;
+        }
+
+        /* ::after伪元素,使用css创建了一个在当前元素内部含有内容并可视但又不是html元素的一个东西 */
+        .tmall-types .high-light:hover::after {
+            content: '';
+            display: block;
+            margin-top: -9px;
+            width: 100%;
+            height: 1px;
+            background-color: rgb(66, 0, 128);
+        }
+
+        .tmall-types a {
+            margin-right: 16px;
+            vertical-align: top;
+            display: inline-block;
+            color: #000;
+            line-height: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .tmall-types a img {
+            width: 100px;
+            height: 30px;
+        }
+
+        /* 轮播图和个人信息的内容区域 */
+        .banner-desc {
+            width: 100%;
+            /* 清除浮动 */
+            overflow: hidden;
+        }
+
+        .banner-wrapper {
+            width: 520px;
+        }
+
+        /* 轮播图模块 */
+
+        .big-carousel {
+            /* 目的设置定位,让内部的子元素相对于当前元素左上角为坐标0,0点进行便宜 */
+            position: relative;
+            border-radius: 8px;
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+        }
+
+        .big-carousel img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .big-carousel .page-control {
+            /* 绝对定位, 相对于距离当前最近的设置了定位的父元素左上角定位 */
+            position: absolute;
+            left: 50%;
+            /*让元素的左上角距离父元素宽度50%距离*/
+            margin-left: -35px;
+            /* 子元素向左移动自身宽度的一半 */
+            bottom: 30px;
+            font-size: 0;
+
+        }
+
+        .big-carousel .page-control .dot {
+            /* span元素是行内元素,宽高无效,设成行内块元素指定宽高 */
+            display: inline-block;
+            margin: 3px;
+            width: 8px;
+            height: 8px;
+            border-radius: 999px;
+            background-color: rgba(255, 255, 255, .5);
+        }
+
+        .big-carousel .page-control .dot.active {
+            background-color: rgb(255, 80, 0);
+        }
+
+
+        .big-carousel .btn {
+            /* 设置绝对定位,相对于距离最近的设置了定位的父元素左上角为坐标原点 */
+            position: absolute;
+            display: inline-block;
+            top: 50%;
+            /* 向上偏移自身高度的一半实现垂直居中 */
+            margin-top: -15px;
+
+        }
+
+        .big-carousel .btn-left {
+            left: 0;
+        }
+
+        .big-carousel .btn-right {
+            right: 0;
+        }
+
+        /* 下方双图轮播图 */
+        .small-carouser {
+            /* 该轮播图内部也需要定位,父元素需要指定定位属性 */
+            position: relative;
+            margin-top: 33px;
+            width: 100%;
+            height: 200px;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .small-carouser img {
+            width: 256px;
+            height: 200px;
+        }
+
+        .small-carouser .btn {
+            position: absolute;
+            /* 元素顶部在父元素垂直中心 */
+            top: 50%;
+            /* 从垂直中心向上偏移元素自身高度的一半实现元素垂直居中 */
+            margin-top: -15px;
+            width: 20px;
+            height: 30px;
+        }
+
+        .small-carouser .btn-left {
+            left: 0;
+        }
+
+        .small-carouser .btn-right {
+            right: 0;
+        }
+
+        .small-carouser .btn img{
+            width: 20px;
+            height: 30px;
+        }
+
+        /* 用户信息模块 */
+        .user-desc {
+            padding: 14px;
+            width: 356px;
+            border-radius: 12px;
+            background-color: #f3f3f3;
+        }
+
+        /* 用户头像 */
+        .user-desc .avatar {
+            width: 80px;
+            height: 80px;
+            margin: 6px auto 0;
+            border-radius: 999px;
+            /* 超出部分隐藏,让图片只显示圆形区域内的内容 */
+            overflow: hidden;
+        }
+
+        /* 用户模块欢迎文字 */
+        .ra-text {
+            margin-top: 10px;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+        }
+
+        .ra-text a {
+            /* 行内元素没有宽高属性,设置行内块元素元素支持宽高属性 */
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .ra-text a:hover:after {
+            content: "";
+            margin-top: -2px;
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: rgb(66, 0, 128);
+        }
+
+        /* 用户模块广告图片 */
+        .user-desc .desc-img {
+            margin-top: 17px;
+            font-size: 0;
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* 用户模块公告样式 */
+        .notice-top {
+            margin-top: 27px;
+            margin-bottom: 12px;
+            font-size: 15px;
+            line-height: 15px;
+            color: #666;
+        }
+
+        .notice-top span {
+            margin-right: 6px;
+            font-weight: 600;
+            line-height: 16px;
+            color: #000;
+        }
+
+        .notice-hot {
+            margin-top: 12px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .notice-hot span {
+            margin-right: 4px;
+            padding: 3px 4px;
+            background: rgba(255, 174, 174, .2);
+            color: #fe0137;
+        }
+
+        .user-tabbar {
+            margin-top: 30px;
+            margin-bottom: 7px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .tabbar-item {
+            margin-right: 38px;
+            text-align: center;
+            color: #333;
+            width: 60px;
+        }
+
+        .tabbar-item img {
+            /* 让图片成为块级元素,图片自占一行 */
+            display: block;
+            width: 22px;
+            height: 22px;
+        }
+
+        .tabbar-item span {
+            display: inline-block;
+            margin-top: 7px;
+            font-size: 12px;
+        }
+
+        .tabbar-item:hover span {
+            text-decoration: underline;
+        }
+
+        .tabbar-item .tab-icon {
+            margin: 0 auto;
+            width: 22px;
+            height: 22px;
+        }
+
+        .tabbar-item:hover .tab-icon::after {
+            content: "";
+            margin-top: -2px;
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: rgb(66, 0, 128);
+        }

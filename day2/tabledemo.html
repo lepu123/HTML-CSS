@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .new-table {
+            border-spacing: 6px;
+        }
+
+        .this {
+            background-color: green;
+        }
+
+        .little {
+            background-color: darkgreen;
+        }
+
+        .piggy {
+            background-color: lightseagreen;
+        }
+
+        .went {
+            background-color: deepskyblue;
+        }
+
+        .to {
+            background-color: dodgerblue;
+        }
+
+        .market {
+            background-color: steelblue;
+        }
+    </style>
+</head>
+<body>
+<!--
+    表格机构化
+    html提供了三个表格结构化标签
+    - thead 表头
+    - tbody 表体
+    - tfoot 表尾
+
+    table 只能包含 tr / caption / thead / tbody / tfoot
+    注意 HTML5 规定了元素标签的顺序
+
+    colgroup,col 一定要在thead之前
+    col
+    colgroup 选取一列或者多列
+    -->
+<table class="new-table">
+    <tr>
+        <th class="this">This</th>
+        <th class="little">Little</th>
+        <th class="piggy">Piggy</th>
+        <th class="went">Went</th>
+        <th class="to">To</th>
+        <th class="market">Market</th>
+    </tr>
+    <tr>
+        <td colspan="2" class="this">This</td>
+        <td class="little">Little</td>
+        <td class="piggy">Piggy</td>
+        <td class="went">Went</td>
+        <td class="to">To</td>
+    </tr>
+    <tr>
+        <td colspan="4" class="this">This</td>
+        <td rowspan="3" class="little">Little</td>
+        <td class="piggy">Piggy</td>
+    </tr>
+    <tr>
+        <td rowspan="2" class="this">This</td>
+        <td class="little">Little</td>
+        <td class="piggy">Piggy</td>
+        <td class="went">Went</td>
+        <td class="to">To</td>
+    </tr>
+    <tr>
+        <td class="little">Little</td>
+        <td class="piggy">Piggy</td>
+        <td class="went">Went</td>
+        <td class="to">To</td>
+    </tr>
+
+
+</table>
+</body>
+</html>

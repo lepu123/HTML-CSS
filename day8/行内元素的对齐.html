@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+            vertical-align 用来指定inline元素或表格元素的垂直对齐方式
+                baseline    使元素基线与父元素的基线对齐
+                top 元素与整行的底部对齐
+                middle  元素的中部与父元素基线加上字体高度除以二的位置对齐
+                bottom  元素与整行的底部对齐
+                sub     元素的基线与父元素的下标基线对齐
+                text-top    元素的顶部与父元素的字体顶部对齐
+        */
+        .title {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 18px;
+
+        }
+
+        .title span {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 12px;
+            line-height: 18px;
+            padding: 0 5px;
+            border: 1px solid rgb(240,40,40);
+            color: rgb(240,40,40);
+        }
+
+        .tag {
+            font-size: 0;
+            height: 100px;
+            background-color: pink;
+        }
+
+        .tag img {
+
+        }
+
+        .tag span {
+            margin-left: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<!--解决两个问题-->
+
+<p class="title">
+    <span>音乐推荐</span> 上的困难时刻基本法快结束部分开发
+</p>
+
+<p class="tag">
+    <img src="./image/preview.png" width="60px" alt="1">
+    <span>你好</span>
+</p>
+</body>
+</html>

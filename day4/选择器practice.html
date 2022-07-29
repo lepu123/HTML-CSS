@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./practice.css">
+
+    <style>
+        /*
+        优先级
+        越精的选择器优先级越高
+        !important > 内联 > id > 类选择器 > 元素选择器 > 通配符选择器 > 继承的样式
+        */
+
+    </style>
+</head>
+<body>
+<!--
+一级列表 字体红色
+二级列表 字体绿色
+
+新闻第一个新闻标题是红色    新闻模块背景灰色
+新闻第二个新闻标题是浅红色  新闻模块背景灰色
+新闻第二个新闻标题是黑色    新闻模块背景灰色
+独家字体颜色是橘红色
+-->
+
+<div class="main">
+    <ul class="nav-list">
+        <li>要闻</li>
+        <li>广州</li>
+        <li>国内</li>
+        <li>国际</li>
+        <li>独家</li>
+        <li>军事
+            <ul class="nav-other">
+                <li>航空/航天</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </li>
+    </ul>
+    <br>
+    <section>
+        <article class="one-article">
+            <h2>谁杀死了平价雪糕</h2>
+            <p>小心雪糕刺客</p>
+            <p class="num">独家</p>
+        </article>
+        <article class="two-article">
+            <h2>明星搞餐饮，疯狂割韭菜</h2>
+            <p>陈赤赤你还我血汗钱</p>
+            <p class="num">独家</p>
+        </article>
+        <article>
+            <h2>美国在叙利亚再次发射忍者导弹</h2>
+            <p>中方表示强烈谴责</p>
+            <p class="num">军事</p>
+        </article>
+        <article>
+            <h2>中国男足再次无缘世界杯</h2>
+            <p>中国球迷大喊退钱</p>
+            <p class="num">体育</p>
+        </article>
+        <article>
+            <h2>中国避暑城市排行，谁是第一</h2>
+            <p>避暑</p>
+            <p class="num">独家</p>
+        </article>
+    </section>
+</div>
+</body>
+</html>

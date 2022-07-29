@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xxx书城账户注册</title>
+    <style>
+        * {
+            padding: 5px;
+            margin: 0;
+            text-align: center;
+            background-color: #e3dede;
+        }
+
+
+    </style>
+</head>
+<body>
+<h1>xxx书城账户注册</h1>
+<form>
+    <!--文本框-->
+    <div>
+        <label>用户名:
+            <input type="text" name="username" id="username" placeholder="请输入您的用户名">
+        </label>
+    </div>
+    <!--密码框-->
+    <div>
+        <label for="password1">密&nbsp;码:</label>
+        <input type="password" name="password1" id="password1"
+               required="required" autofocus="autofocus"
+               placeholder="请输入您的密码"></div>
+    <!--  单选按钮  -->
+    <div>请选择您的性别
+        <input type="radio" name="gender" id="boy" value="男">
+        <label for="boy">男</label>
+        <input type="radio" name="gender" id="girl" value="女">
+        <label for="girl">女</label>
+        <input type="radio" name="gender" id="i-kun" value="鸡">
+        <label for="i-kun">坤坤</label>
+
+    </div>
+    <!--  多选按钮  -->
+    <div>请选择你的爱好
+        <input type="checkbox" name="hobby" id="sing" value="唱">
+        <label for="sing">唱</label>
+        <input type="checkbox" name="hobby" id="dancing" value="跳">
+        <label for="dancing">跳</label>
+        <input type="checkbox" name="hobby" id="rap" value="rap">
+        <label for="rap">rap</label>
+        <input type="checkbox" name="hobby" id="basketball" value="篮球">
+        <label for="basketball">篮球</label>
+    </div>
+    <!--  邮箱  -->
+    <div><label for="email">请输入你的邮箱</label> <input type="email" id="email" placeholder="邮箱"></div>
+    <!--  文件域  -->
+    <div><label for="head-portrait">选择你的头像</label> <input type="file" id="head-portrait"></div>
+    <!--  select和option 下拉列表  -->
+    <div>
+        <label for="home-address"></label>家庭住址
+        <select id="home-address">
+            <option value="1">北京</option>
+            <option value="1">上海</option>
+            <option value="1" selected="selected">重庆</option>
+        </select>
+    </div>
+
+    <div><label for="advice">意见箱 <br></label><textarea name="jy" id="advice" cols="30" rows="10"
+                                                       placeholder="请您提出对我们的建议我们将虚心接受死不悔改"></textarea></div>
+    <div>
+        <input type="submit" value="注册">
+        <input type="reset" value=重置>
+    </div>
+</form>
+</body>
+</html>

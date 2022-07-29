@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            float: left;
+            margin: 10px;
+        }
+
+        .div {
+            float: left;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!--块级元素的上下外边距会与另一个块级元素的上下外边距重叠为一个单个边距-->
+<p>Holle World</p>
+<div class="div">
+    div元素
+</div>
+
+<!--
+父元素与其没有被其他内容分开的子元素
+
+父元素如果没有边框、内边距、行内内容，没有overflow: hidden;或者是行内元素，块级元素将其分开，子元素的上边距就会与父元素的上边距重叠
+导致重叠部分溢出到父元素外部
+
+父元素如果没有边框、内边距、行内内容，没有overflow: hidden;或者是行内元素，块级元素将其分开，
+或者没有设置height、min-height、max-height，margin-bottom也会溢出到父元素的外面
+-->
+
+
+<!--
+两个块级元素之间隔着一个空元素(没有宽高、没有边框、没有边距、没有内容)，那么这两个元素的上下外边距将会重叠
+
+两个边距发生重叠时，保留值最大的边距，若发生重叠的元素包含负值、重叠后的边距为最大正边距和最小负边距的和
+-->
+
+
+
+</body>
+</html>

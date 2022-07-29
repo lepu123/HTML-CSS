@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+            %   相对父元素的百分比
+            px  像素(相对单位)代表的是设备像素
+            em  当前元素的字号大小就是1em支持浮点数(基本不使用)
+            rem html元素的字体大小(在做响应式布局的时候很常用,但是CSS3标准里推荐使用新的尺寸单位 vw wh 来替代rem)
+            vw  100vw等于屏幕视口宽度
+            vh  100vh等于屏幕视口高度
+        */
+
+        :root {
+            --ultramarine:rgb(0,147,221)
+        }
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            font-size: 20px;
+        }
+        .box {
+            width: 20vw;
+            height: 20vh;
+            background-color: var(--ultramarine);
+        }
+
+        /*
+            颜色
+            1.颜色的英文单词
+            2.rgb / rgba : rgb分别对应光学三原色红绿蓝,取值范围在0~255之间,a对应的是透明度取值范围0-1之间的浮点数
+            3.#FFFFFF rgb的十六进制写法,取值范围是00-FF之间
+              #FFFFFF 可以简写为 #fff
+            4.hsl 工业颜色标准(了解)h表示色调(0-360)之间,s饱和度(0~100%),l颜色的亮度(0~100%)
+        */
+        .small-box {
+            width: 50%;
+            height: 50%;
+            background-color: #ff5000;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="small-box">
+
+    </div>
+</div>
+</body>
+</html>

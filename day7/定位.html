@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .big-box {
+            margin: 20px auto;
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+        }
+
+        .box {
+            /*
+            表示当前的元素是一个正常的布局行为,没有定位
+            定位相关属性 left right top bottom z-index 无效
+            position: relative 相对定位
+                1.元素一开始显示在初始位置，并不会去改变文档流的布局(不脱离文档流的定位属性)
+                  我们也可以认为相对定位属性是半脱离文档流，该属性会保留正常文档流的位置，但是定位属性又将其显示位置做了一个移动
+                2.定位属性相对于元素的初始位置进行了偏移 例: left: 100px 相对于初始位置左移距离100px
+
+            position: absolute 绝对定位，该定位会使得元素脱离文档流，页面不会给当前元素预留空间
+            该属性会向上逐级查询距离他最近的设置了定位(非static)的父元素以该元素作为参照系进行偏移
+            该元素若上层所有的父元素都没有设置定位，该元素就以body为基准坐标系
+
+            position: fixed 窗口定位，元素会脱离文档流元素相对于当前浏览器可视区域视口进行定位，当前页面滚动该定位的元素不会随着页面的滚动而滚动
+
+            position: sticky 粘性布局，布局根据正常的文档流进行定位，然后相对他最近的可以滚动的元素进行偏移定位，粘性定位被认为是相对定位和固定定位的混合
+            */
+            border: 1px solid #000;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-color: rgb(174,125,219);
+            position: static;
+        }
+
+        .position {
+            background-color: orange;
+            position: relative;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="big-box">
+    <div class="box"></div>
+    <div class="box position"></div>
+    <div class="box"></div>
+</div>
+
+</body>
+</html>

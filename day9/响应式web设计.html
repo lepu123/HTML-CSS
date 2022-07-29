@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        /*
+            屏幕大小各式各样，屏幕的分辨率也不太相同，响应式web设计就是一种自动响应不同设备的设计方案
+            实现此技术的核心就是媒体查询(media query)
+
+            媒体查询是通过设备某些特征，功能用户选择定位当前浏览器，基于这些内容响应式的执行相关的代码，其中最常见的就是媒体查询视口大小并通过这种方式慢慢催生了响应式设计
+
+        */
+
+        .demo {
+            background-color: aqua;
+            font-size: 19px;
+            text-align: right;
+        }
+        
+        @media (max-width: 1190px) {
+            .demo {
+                background-color: #ff5000;
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 990px) {
+            .demo {
+                background-color: orange;
+                font-size: 12px;
+                text-align: left;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<p class="demo">Hello</p>
+</body>
+</html>

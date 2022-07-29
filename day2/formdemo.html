@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!--表单提交时将数据发送给那个服务器-->
+<form name="register">
+
+    <!--  input默认文本，单行文本输入框，输入换行会自动去除  -->
+    <label><input type="text" placeholder="单行文本输入框"></label>
+
+    <!--  单行密码输入框，输入的文本使用密文显示  -->
+    <label><input type="password" placeholder="单行密码输入框"></label>
+
+    <!--  只能输入数字  -->
+    <label><input type="number" placeholder="纯数字输入框"></label>
+
+    <!--  html5新增:编辑邮箱地址的输入框，在支持的浏览器上会有邮箱格式验证  -->
+    <label><input type="email" placeholder="邮箱格式验证"></label>
+
+    <!--  html5新增:搜索用,移动端键盘发送按钮文本将会变为搜索,自动去除换行符的文本输入框  -->
+    <label><input type="search" placeholder="可搜索自带清除的文本输入框"></label>
+
+    <!--  html5新增输入电话号码的控件，拥有动态键盘的设备上会显示电话数字键盘  -->
+    <label><input type="tel" placeholder="输入电话号码"></label>
+
+    <!--  html5新增资源地址输入框,自带资源地址规则验证  -->
+    <label><input type="url" placeholder="输入网址"></label>
+    <!--  week、month、time都是不带时区的时间控件
+          week  用于输入年和周数组成的日期
+          month 输入年和月的控件
+          time  输入时间的控件-->
+    <label><input type="week"></label>
+    <label><input type="month"></label>
+    <label><input type="time"></label>
+    <br>
+    <label><input type="date"></label>
+    <br>
+    <label><input type="datetime-local"></label>
+
+
+    <!--
+    复选框可设置为选中和未选中,一定要设置name属性和value属性,
+    注意:在复选框提交时name值一样会导致后台最终只能拿到一个数据(后者覆盖前者),解决方法就是在复选框的name值中的末尾加括号"[]",表示该变量是个数组
+    -->
+    <label><input type="checkbox" name="栏位名称" value="内定值"></label>
+    <label>唱<input type="checkbox" name="hobby[]" value="唱"></label>
+    <label>跳<input type="checkbox" name="hobby[]" value="跳"></label>
+    <label>rap<input type="checkbox" name="hobby[]" value="rap"></label>
+    <label>篮球<input type="checkbox" name="hobby[]" value="篮球"></label>
+
+    <!--  单选框,要实现多个单选框的单选功能必须要给他们设置同样的name表示同一个选项  -->
+    <label><input type="radio" name="属性名" value="值"></label>
+    <label>♂<input type="radio" name="gender" value="男"></label>
+    <label>♀<input type="radio" name="gender" value="女"></label>
+    <label>🐥<input type="radio" name="gender" value="坤坤"></label>
+
+
+    <!--  表单变为按钮,按钮的文本要设置value值,不携带按钮的默认行为(在form表单内部点击会自动提交表单)  -->
+    <label><input type="button" value="提交1"></label>
+    <!--    -->
+    <button>提交2</button>
+    <!--  提交按钮  -->
+    <label><input type="submit"></label>
+
+    <!--  表单文件新增  -->
+    <label>选择你的文件<input type="file" accept="image/png"></label>
+
+    <!--  image,带图片的submit,有src和alt属性  -->
+    <label> <input type="image" src="preview.png" alt="提交"></label>
+
+    <!--  hidden  不显示的控件其值仍会提交到服务器  -->
+    <input  type="hidden" name="account" value="123456789">
+
+    <label>
+        <input type="range">
+    </label>
+    <div class="preference">
+        <!--label元素是表示用户界面中某个元素的说明例如以下示例-->
+        <label for="html">你喜欢HTML5嘛</label>
+        <input type="checkbox" name="html" id="html">
+    </div>
+    <!--实现input元素和label元素相关联
+    方法一:两元素同级时可以给label一个for属性,给input设置一个id和input元素的for值一样即可完成关联
+    方法二:label为父级input为子级即可完成关联-->
+    <div class="preference">
+        <label>
+            你喜欢编程嘛
+            <input type="checkbox" name="program">
+        </label>
+    </div>
+
+    <label for="proposal">登录发表评论</label>
+    <!--多行文本输入框-->
+    <textarea id="proposal" name="proposal" rows="5" cols="33"
+              placeholder="这里是多行文本输入框的内容"></textarea>
+</form>
+</body>
+</html>

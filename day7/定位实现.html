@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        header {
+            padding: 5px 85px;
+            background-color: #eee;
+        }
+
+        header::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .setting-warp {
+            float: right;
+            position: relative;
+            width: 36px;
+            text-align: center;
+        }
+
+        .setting-warp a:hover {
+            color: rgb(0,102,255);
+        }
+
+        .setting-warp:hover .setting-menu {
+            display: initial;
+        }
+
+        .setting-warp .setting-menu {
+            display: none;
+            position: absolute;
+            text-align: center;
+            top: 30px;
+            width: 80px;
+            left: -22px;
+        }
+
+        .setting-warp .setting-menu::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 30px;
+            top: -10px;
+            border: 10px solid #fff;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-top: 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="setting-warp">
+        <span><a href="">设置</a></span>
+        <ul class="setting-menu">
+            <li>搜索设置</li>
+            <li>高级搜索</li>
+            <li>关闭预测</li>
+            <li>隐藏设置</li>
+            <li>关闭热搜</li>
+        </ul>
+    </div>
+</header>
+</body>
+</html>

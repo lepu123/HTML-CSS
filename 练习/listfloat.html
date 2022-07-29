@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        .shop-ul::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .shop-list li {
+            float: left;
+            width: 120px;
+        }
+
+        .last-list {
+            display: none;
+        }
+
+        .last-list li {
+            clear: both;
+        }
+
+        .shop-list ul > li:hover .last-list {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="shop-list">
+    <ul class="shop-ul">
+        <li>我的淘宝
+            <ul class="last-list">
+                <li>已买到的宝贝</li>
+                <li>已卖出的宝贝</li>
+            </ul>
+        </li>
+        <li>收藏夹
+            <ul class="last-list">
+                <li>收藏的宝贝</li>
+                <li>收藏的店铺</li>
+            </ul>
+        </li>
+        <li>商家支持
+            <ul class="last-list">
+                <li>商家中心</li>
+                <li>商家入驻</li>
+                <li>商家品控</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

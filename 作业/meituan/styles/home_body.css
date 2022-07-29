@@ -1,0 +1,142 @@
+.home-body {
+    display: flex;
+    align-items: flex-start;
+    width: 100vw;
+    background-color: #f6f7fa;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ellipse {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.home-mode {
+    width: 100vw;
+    background-color: #fff;
+    margin-top: 2.7vw;
+}
+
+.home-mode:first-of-type {
+    margin-top: 0;
+}
+
+.home-body .category-mod {
+    padding: 2.7vw 3.2vw;
+}
+
+.home-body .category-mod .cate-list-wrap {
+    display: grid;
+    grid-template-columns: repeat(5,13.3vw);
+    grid-gap: 5.3vw 6.4vw;
+}
+
+.home-body .category-mod .cate-list-wrap .category-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-body .category-mod .cate-list-wrap .category-wrap img {
+    width: 11.2vw;
+}
+
+.home-body .category-mod .cate-list-wrap .category-wrap span {
+    margin-top: 1.9vw;
+    font-size: 3.2vw;
+    color: #333;
+}
+
+.home-body .recommend-mod {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 26.7vw;
+    padding: 3.7vw 2.7vw 0;
+}
+
+.home-body .recommend-mod h5 {
+    flex-shrink: 0;
+    font-size: 4.5vw;
+    color: #333;
+    font-weight: 600;
+}
+
+.home-body .recommend-mod .recommend-list {
+    position: relative;
+    flex-grow: 1;
+    margin-top: 2.7vw;
+}
+
+.home-body .recommend-mod .recommend-list .recommend-card {
+    display: flex;
+    align-items: center;
+    padding: 1.9vw 0;
+    border-top: 0.3vw solid #ddd8ce;
+}
+
+.home-body .recommend-mod .recommend-list .recommend-card:last-of-type {
+    border-bottom: 0.3vw solid #ddd8ce;
+}
+
+.home-body .recommend-mod .recommend-list .recommend-card .card-img {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    width: 24vw;
+    height: 21.9vw;
+    overflow: hidden;
+}
+
+.home-body .recommend-mod .recommend-list .recommend-card .card-img img {
+    height: 21.9vw;
+}
+
+.home-body .recommend-mod .recommend-list .recommend-card .card-info {
+    display: flex;
+    max-width: 67.9vw;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21.9vw;
+    margin-left: 2.7vw;
+}
+
+.home-body .recommend-mod .recommend-list .recommend-card .card-info .card-title {
+    font-size: 4vw;
+    color: #333;
+    height: 5vw;
+    line-height: 5vw;
+}
+
+.home-body .recommend-mod .recommend-list .recommend-card .card-info .card-desc {
+    font-size: 3.2vw;
+    color: #666;
+    height: 4.5vw;
+    line-height: 4.5vw;
+}
+
+.home-body .recommend-mod .recommend-list .recommend-card .card-price {
+    font-size: 4.8vw;
+    color: #f60;
+}
+
+.home-body .recommend-mod .recommend-list .recommend-card .card-price span {
+    font-size: 3.2vw;
+}
+
+.home-body .recommend-mod .recommend-list .recommend-card .market-price {
+    margin-left: 1.3vw;
+    font-size: 3.2vw;
+    color: #666;
+}
+
+.recommend-all {
+    height: 10.7vw;
+    line-height: 10.7vw;
+    font-size: 4vw;
+    color: #FE8C00;
+    border-bottom: 0.3vw solid #ddd8ce;
+}

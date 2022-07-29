@@ -1,0 +1,52 @@
+.guess-wrapper {
+    margin-top: 10px;
+}
+
+.guess-title {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+
+.label{
+    position: relative;
+    top: 3px;
+    vertical-align: top;
+    display: inline-block;
+    line-height: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    border-radius: 50px;
+}
+
+.guess-goods-list{
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+.guess-goods-list .guess-good{
+    width: 220px;
+    margin-right: 10px;
+    float: left;
+}
+
+
+.guess-goods-list .guess-good .good-desc {
+    line-height: 18px;
+    max-height: 36px;
+    overflow: hidden;
+    font-size: 16px;
+}
+.guess-goods-list .guess-good .good-price{
+    margin-top: 5px;
+    font-size: 20px;
+    color: #ff5000;
+}
+
+
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            display: flex;
+            background-color: aqua;
+        }
+        /*
+
+        */
+
+        .box .grow {
+            flex-grow: 1;
+        }
+
+        .box .grow:first-child {
+            flex-grow: 2;
+        }
+
+        /*
+             flex项目(flex-item)的属性
+
+            flex-grow   定义了子元素在弹性盒子内当有足够的空间时是否展开
+            接受一个数字作为值，0表示不允许放大，大于0的数字都表示允许放大，数字表示放大后跟其他放大兄弟之间的大小比例关系
+
+            flex-shrink 定义了子元素在弹性盒子内，当有父元素的空间不足时是否缩小
+            接受一个数字作为值，0表示不允许缩小，大于0的数都表示允许缩小，数字的值都表示兄弟元素之间的缩放比例
+
+            flex-basis 表示的弹性盒子子元素，初始大小默认值时元素自身大小,但是也可以指定任意尺寸大小
+
+            flex 属性时以上三个属性的简写形式值为 flex: flex-grow flex-shrink flex-basis 默认值 0 1 auto
+        */
+        .box p {
+            width: 500px;
+            text-align: center;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <p class="grow">left</p>
+    <p class="grow">center</p>
+    <p class="grow">right</p>
+</div>
+</body>
+</html>

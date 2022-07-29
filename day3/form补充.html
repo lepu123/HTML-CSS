@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+label可以和textarea配合使用提高用户体验
+cols 和 rows属性可以精确控制文本输入框的尺寸,应为浏览器的元素,不同的浏览器默认行列尺寸不同,所以在开发中推荐一定要去写保证所有浏览器ui一致
+多行文本输入框输入的文本内容在对称性标签内部而不在value属性中(textarea没有value属性)
+
+textarea支持的属性
+-autofocus  自动获取光标
+-disabled   禁用
+-form       属性值与页面中设置id的form表单的id值相等,可以绑定到一起,在表单元素提交时此多行文本输入框的内容也会被一起提交
+-placeholder占位符
+-readonly   只读
+-cols       列数
+-rows       行数
+-maxlenght  文本最大长度
+-minlenght  文本最小长度
+-wrap       换行(了解一般使用CSS样式)
+    -hard   文本达到元素最大时,浏览器自动插入换行符
+    -soft   (默认值)不插入换行符
+-->
+<label for="comment">速速提出意见</label>
+<textarea name="advice" id="comment" cols="30" rows="10"></textarea>
+
+
+<!--
+select下拉列表选择表单,支持的属性
+
+-name       表单提交key
+-autofocus  自动获取光标
+-disable    禁用
+-form       属性值与页面中设置的id的form表单元素的id值相等时,可以绑定到一起
+-multiple   复选
+-require    必选
+-size       列表框尺寸,下拉列表如果是滑动列表框(设置了multiple属性),该属性表示滑动框的可见行数,默认值时0由系统自己判断展示可见数
+
+option
+-disable    禁用某个选项
+-value      表单提交时value值,省略
+-->
+<select multiple autofocus name="" id="">
+    <option value="">1</option>
+    <option value="">2</option>
+    <option value="">3</option>
+    <option value="">4</option>
+    <option value="">5</option>
+</select>
+
+</body>
+</html>

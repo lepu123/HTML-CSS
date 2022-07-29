@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>粤嵌学习平台调查表</title>
+    <style>
+        div {
+            padding: 0 0 15px 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>粤嵌学习平台调查表</h1>
+    <h3>感谢您抽出时间帮助我们改进平台</h3>
+</header>
+
+<main>
+    <form>
+        <div>
+            <div><label>Name: <input autofocus required type="text" name="name" placeholder="请输入你的姓名"></label></div>
+            <div><label>Email:&nbsp; <input required type="email" name="email" placeholder="请输入你的邮箱"></label></div>
+            <div><label>Age(请选择): <input type="number" name="number" max="99" min="10" placeholder="年龄"></label></div>
+            <div>
+                <label for="professional">请问你的职业是?</label>
+                <!--select option拥有一个selected属性-->
+                <select required name="profession" id="professional">
+                    <option value="公职人员">公职人员</option>
+                    <option value="老师">老师</option>
+                    <option value="学生">学生</option>
+                    <option disabled hidden value="4" selected>请选择你的职业</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <div>你会向朋友推荐粤嵌学习平台吗？</div>
+            <label>
+                <input type="radio" name="recommend" value="会">
+                会
+            </label>
+            <label>
+                <input type="radio" name="recommend" value="可能会">
+                可能会
+            </label>
+            <label>
+                <input type="radio" name="recommend" value="不会">
+                不会
+            </label>
+        </div>
+        <div>
+            <label>你最喜欢粤嵌平台的什么功能？<br>
+                <select required name="function">
+                    <option value="好用">好用</option>
+                    <option value="经济">经济</option>
+                    <option value="方便">方便</option>
+                    <option value="实惠">实惠</option>
+                    <option hidden value="1" selected="selected">请选择</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            你希望看到什么改进？ (可以全选)
+        </div>
+        <div>
+            <label><input type="checkbox" name="update[]" value="前端项目">前端项目</label>
+            <label><input type="checkbox" name="update[]" value="后端项目">后端项目</label>
+            <label><input type="checkbox" name="update[]" value="数据可视化">数据可视化</label>
+            <label><input type="checkbox" name="update[]" value="课程">课程</label>
+            <label><input type="checkbox" name="update[]" value="班级学习氛围">班级学习氛围</label>
+            <label><input type="checkbox" name="update[]" value="答疑">答疑</label>
+            <label><input type="checkbox" name="update[]" value="视频">视频</label>
+            <label><input type="checkbox" name="update[]" value="附加课程">附加课程</label>
+        </div>
+        <div>
+            <label for="jy">有什么意见或者建议吗？</label>
+        </div>
+
+        <textarea name="advice" id="jy" placeholder="Enter your comment here..."></textarea>
+        <div>
+            <label><input type="submit"></label>
+        </div>
+        <div>
+            <label><input type="image" src="submit.PNG" alt="提交"></label>
+        </div>
+
+    </form>
+</main>
+</body>
+</html>

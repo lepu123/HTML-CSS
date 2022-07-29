@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基准点</title>
+    <!--  一个页面只允许有一个基准点  -->
+    <base href="https://www.bilibili.com">
+
+</head>
+<body>
+<!--
+    相对路径
+    ./  表示当前目录
+    ../ 表示上一级目录
+    /   根目录,默认情况下根目录是当前服务器地址,如果页面设置了base基准点标签,根目录将会指向base标签的src属性
+    base 基准点不仅仅影响 a 标签,他影响所有使用 / 根目录的属性
+-->
+<a href="/anime">番剧</a>
+<a href="/guochuang">国产</a>
+<a href="/variety">综艺</a>
+<a href="/v/kichiku">鬼畜</a>
+</body>
+</html>

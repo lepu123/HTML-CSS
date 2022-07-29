@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*伪类:就是用来匹配页面中元素处于某种特殊状态时选择器,伪类支持派生用法,伪类的语法:特殊状态 列 :hover*/
+
+
+
+
+        /*
+            :link   超链接还未被访问的状态
+            :visited超链接已经被访问过的状态
+            :hover  鼠标悬停到目标元素的状态 适用于所有元素
+            :active 元素被选定的状态
+
+            以上四个伪类应用在同一个元素上时,伪类的声明顺序是有要求的
+
+            hover 必须在 link visited后
+            active 一定要在 hover 后面
+
+            爱恨原则 LoVe HAte
+        */
+
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: orange;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        a:active {
+            color: black;
+        }
+
+        p:hover {
+            color: red;
+        }
+
+        p:active {
+            background: green;
+            color: orange;
+        }
+
+        /*
+            结构伪类
+            :nth-child(n) 当前选择器的第n个子元素
+
+            n支持三种写法
+            1.直接写一个数字明确指定第几个
+            2.even 或 odd 分别表示偶数和奇数
+            3.an+b a和b是常数,n从0开始依次加1
+
+
+            :first-child伪类 等价于 :nth-child(1)
+
+            :last-child伪类 最后一个子元素
+
+            :first-of-type伪类 等价于:nth-child(1)陪陪页面中同一个父元素下指定类型的首个元素
+
+            :last-of-type伪类 等价于 nth-child(n) 匹配页面中同一个父元素下指定类型的最后一个元素
+
+            :only-child伪类 表示父元素唯一子元素
+
+            :only-of-type伪类 表示父元素中指定类型的唯一元素
+
+            :nth-last-child(n) 跟:nth-child(n)相反,表示查询同一个父元素下倒数第n个子元素
+
+            :nth-last-of-type(n) 跟:nth-of-type(n)相反,表示同一个父元素下倒数第n个指定类型的元素
+        */
+
+        h2:only-of-type {
+            color: #73ff39;
+        }
+
+        .box p:nth-child(2) {
+            color: green;
+            font-weight: 600;
+        }
+
+        .bag p::first-letter {
+            color: red;
+        }
+
+        /*nth-of-type(n) 选择器用于匹配当前父元素内部第n指定类型的子元素*/
+        .box div:nth-of-type(1) {
+            color: #73ff39;
+        }
+    </style>
+</head>
+<body>
+<a href="https://www.bilibili.com">哔哩哔哩</a>
+<a href="https://www.bing.com">必应</a>
+
+<!--<div class="box">-->
+<!--    <p>1</p>-->
+<!--    <div>1.5</div>-->
+<!--    <div>1.9</div>-->
+<!--    <p>2</p>-->
+<!--    <p>3</p>-->
+<!--    <p>4</p>-->
+<!--    <p>5</p>-->
+<!--    <p>6</p>-->
+<!--</div>-->
+
+<div class="bag">
+    <p>
+        p1
+        <span>123</span>
+    </p>
+    <p>p2</p>
+    <h3>h3-1</h3>
+    <p>p3</p>
+    <p>p4</p>
+    <h3>h3-2</h3>
+    <h2>h2-1</h2>
+    <h1>h1-1</h1>
+    <h3>h3-3</h3>
+    <p>p5</p>
+    <p>p6</p>
+</div>
+</body>
+</html>

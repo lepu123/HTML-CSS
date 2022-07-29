@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body {
+            background-color: #fcfcfd;
+        }
+
+        .m-top-bar {
+            position: relative;
+            width: 390px;
+            height: 0;
+            padding-bottom: 84px;
+        }
+
+        .m-top-bar .top-fix {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            width: 390px;
+            height: 84px;
+            background-color: #d43c33;
+            justify-content: space-between;
+        }
+
+        .m-top-bar .top-fix img {
+            width: 142px;
+            height: 25px;
+        }
+
+        .m-top-bar .top-fix .top-fr {
+            width: 100px;
+            height: 36px;
+            font-size: 16px;
+        }
+
+        .m-top-bar .top-fix .top-fr span {
+            position: relative;
+            display: inline-block;
+            right: 0;
+            width: 100px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            color: #d43c33;
+            background-color: #fff;
+            border-radius: 37.5%/100%;
+        }
+
+        .m-home .m-tab-area{
+            width: 390px;
+            padding-top: 40px;
+        }
+
+        .tab-header {
+            width: 390px;
+        }
+
+        .tab-header .tab-header-nav {
+            position: fixed;
+            top: 84px;
+            left: 0;
+            width: 390px;
+            z-index: 100;
+            height: 40px;
+            border-bottom: 1px solid #ededef;
+        }
+
+        .tab-header .tab-header-nav a {
+            background-color: #fcfcfd;
+        }
+
+        .tab-header .tab-header-nav .tab-title {
+            float: left;
+            display: block;
+            width: 33.3%;
+            height: 100%;
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+            line-height: 40px;
+        }
+
+        .m-tab-content {
+            width: 390px;
+            height: 100%;
+        }
+
+        .m-tab-content .hot-op {
+            width: 100%;
+            height: 151px;
+            background-image: url("./image/hot-music.jpg");
+            background-size: contain;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .m-tab-content .hot-op .hot-op-content {
+            display: flex;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 1;
+            padding-left: 20px;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .m-tab-content .hot-op .hot-op-content .hot-logo {
+            width: 142px;
+            height: 67px;
+            background-image: url("./image/index-icon.png");
+            background-repeat: no-repeat;
+            background-size: 166px 97px;
+            background-position: -24px -30px;
+        }
+
+        .m-tab-content .hot-op .hot-op-content .hot-time {
+            margin-top: 10px;
+            color: hsla(0,0%,100%,.8);
+            font-size: 12px;
+        }
+        .hot-music {
+            width: 100%;
+            height: 55px;
+            /*padding-left: 10px;*/
+            position: relative;
+        }
+
+        .hot-music .sg {
+            position: absolute;
+            top: 0;
+            line-height: 55px;
+            text-align: center;
+            height: 55px;
+            display: inline-block;
+            width: 40px;
+            font-size: 17px;
+            color: #999;
+
+        }
+
+        .hot-music .music-content {
+            display: inline-block;
+            padding: 6px 0;
+            width: 350px;
+            height: 55px;
+            position: absolute;
+            left: 40px;
+            border-bottom: 1px solid rgba(211, 211, 211, 0.5);
+        }
+
+        .hot-music .music-content .ch-l {
+            display: inline-block;
+        }
+
+        .hot-music .music-content .music-name {
+            height: 25px;
+            font-size: 17px;
+            line-height: 25px;
+        }
+
+        .hot-music .music-content .singer {
+            font-size: 12px;
+            height: 18px;
+            line-height: 18px;
+            color: #999;
+        }
+
+        .hot-music .music-content .singer i {
+            display: inline-block;
+            width: 12px;
+            height: 8px;
+            margin-right: 4px;
+            background-image: url("./image/index-icon.png");
+            background-size: 166px 97px;
+        }
+
+        .hot-music .music-content .ch-r {
+            position: absolute;
+            height: 100%;
+            width: 42px;
+            padding: 0 10px;
+            display: inline-block;
+            top: 0;
+            right: 0;
+        }
+
+        .hot-music .music-content .ch-r span {
+            display: inline-block;
+            position: absolute;
+            top: 15px;
+            width: 22px;
+            height: 22px;
+            background-image: url("./image/index-icon.png");
+            background-size: 166px 97px;
+            background-position: -24px 0;
+        }
+
+        .sg.sg-no {
+            color: #df3436;
+        }
+    </style>
+</head>
+<body>
+<div class="m-home">
+    <div class="m-top-bar">
+        <div class="top-fix">
+            <img src="./image/w-logo.PNG" alt="logo">
+            <div class="top-fr">
+                <span>下载APP</span>
+            </div>
+        </div>
+    </div>
+    <div class="m-tab-area">
+        <div class="tab-header">
+            <nav class="tab-header-nav">
+                <div></div>
+                <a class="tab-title" href="#">推荐音乐</a>
+                <a class="tab-title" href="#">热歌榜</a>
+                <a class="tab-title" href="#">搜索</a>
+            </nav>
+        </div>
+        <div class="m-tab-content">
+            <div class="hot-op">
+                <div class="hot-op-content">
+                    <div class="hot-logo"></div>
+                    <div class="hot-time">
+                        更新日期：7.19
+                    </div>
+                </div>
+            </div>
+            <div class="hot-cont">
+                <div class="hot-music">
+                    <div class="sg sg-no">01</div>
+                    <div class="music-content">
+                        <div class="ch-l">
+                            <div class="music-name">再见莫妮卡</div>
+                            <div class="singer">彭席彦 / Franky弗兰奇</div>
+                        </div>
+                        <div class="ch-r"><span></span></div>
+                    </div>
+                </div>
+                <div class="hot-music">
+                    <div class="sg sg-no">02</div>
+                    <div class="music-content">
+                        <div class="ch-l">
+                            <div class="music-name">小城夏天</div>
+                            <div class="singer"><i></i>LBI利比</div>
+                        </div>
+                        <div class="ch-r"><span></span></div>
+                    </div>
+                </div>
+                <div class="hot-music">
+                    <div class="sg sg-no">03</div>
+                    <div class="music-content">
+                        <div class="ch-l">
+                            <div class="music-name">苦茶子</div>
+                            <div class="singer"><i></i>Starling8 / MoreLearn 27 / FIVESTAR</div>
+                        </div>
+                        <div class="ch-r"><span></span></div>
+                    </div>
+                </div>
+                <div class="hot-music">
+                    <div class="sg">04</div>
+                    <div class="music-content">
+                        <div class="ch-l">
+                            <div class="music-name">隆里电丝 (LIVE版)</div>
+                            <div class="singer"><i></i>盛宇D-SHINE / KEY.L刘聪 / ICE</div>
+                        </div>
+                        <div class="ch-r"><span></span></div>
+                    </div>
+                </div>
+                <div class="hot-music">
+                    <div class="sg">01</div>
+                    <div class="music-content">
+                        <div class="ch-l">
+                            <div class="music-name">再见莫妮卡</div>
+                            <div class="singer">彭席彦 / Franky弗兰奇</div>
+                        </div>
+                        <div class="ch-r"><span></span></div>
+                    </div>
+                </div>
+                <div class="hot-music">
+                    <div class="sg">01</div>
+                    <div class="music-content">
+                        <div class="ch-l">
+                            <div class="music-name">再见莫妮卡</div>
+                            <div class="singer">彭席彦 / Franky弗兰奇</div>
+                        </div>
+                        <div class="ch-r"><span></span></div>
+                    </div>
+                </div>
+                <div class="hot-music">
+                    <div class="sg">01</div>
+                    <div class="music-content">
+                        <div class="ch-l">
+                            <div class="music-name">再见莫妮卡</div>
+                            <div class="singer">彭席彦 / Franky弗兰奇</div>
+                        </div>
+                        <div class="ch-r"><span></span></div>
+                    </div>
+                </div>
+                <div class="hot-music">
+                    <div class="sg">01</div>
+                    <div class="music-content">
+                        <div class="ch-l">
+                            <div class="music-name">再见莫妮卡</div>
+                            <div class="singer">彭席彦 / Franky弗兰奇</div>
+                        </div>
+                        <div class="ch-r"><span></span></div>
+                    </div>
+                </div>
+                <div class="hot-music">
+                    <div class="sg">01</div>
+                    <div class="music-content">
+                        <div class="ch-l">
+                            <div class="music-name">再见莫妮卡</div>
+                            <div class="singer">彭席彦 / Franky弗兰奇</div>
+                        </div>
+                        <div class="ch-r"><span></span></div>
+                    </div>
+                </div>
+                <div class="hot-music">
+                    <div class="sg">01</div>
+                    <div class="music-content">
+                        <div class="ch-l">
+                            <div class="music-name">再见莫妮卡</div>
+                            <div class="singer">彭席彦 / Franky弗兰奇</div>
+                        </div>
+                        <div class="ch-r"><span></span></div>
+                    </div>
+                </div>
+                <div class="hot-music">
+                    <div class="sg">01</div>
+                    <div class="music-content">
+                        <div class="ch-l">
+                            <div class="music-name">再见莫妮卡</div>
+                            <div class="singer">彭席彦 / Franky弗兰奇</div>
+                        </div>
+                        <div class="ch-r"><span></span></div>
+                    </div>
+                </div>
+                <div class="hot-music">
+                    <div class="sg">01</div>
+                    <div class="music-content">
+                        <div class="ch-l">
+                            <div class="music-name">再见莫妮卡</div>
+                            <div class="singer">彭席彦 / Franky弗兰奇</div>
+                        </div>
+                        <div class="ch-r"><span></span></div>
+                    </div>
+                </div>
+                <div class="hot-music">
+                    <div class="sg">01</div>
+                    <div class="music-content">
+                        <div class="ch-l">
+                            <div class="music-name">再见莫妮卡</div>
+                            <div class="singer">彭席彦 / Franky弗兰奇</div>
+                        </div>
+                        <div class="ch-r"><span></span></div>
+                    </div>
+                </div>
+                <div class="hot-music">
+                    <div class="sg">01</div>
+                    <div class="music-content">
+                        <div class="ch-l">
+                            <div class="music-name">再见莫妮卡</div>
+                            <div class="singer">彭席彦 / Franky弗兰奇</div>
+                        </div>
+                        <div class="ch-r"><span></span></div>
+                    </div>
+                </div>
+                <div class="hot-music">
+                    <div class="sg">01</div>
+                    <div class="music-content">
+                        <div class="ch-l">
+                            <div class="music-name">再见莫妮卡</div>
+                            <div class="singer">彭席彦 / Franky弗兰奇</div>
+                        </div>
+                        <div class="ch-r"><span></span></div>
+                    </div>
+                </div>
+                <div class="hot-music">
+                    <div class="sg">01</div>
+                    <div class="music-content">
+                        <div class="ch-l">
+                            <div class="music-name">再见莫妮卡</div>
+                            <div class="singer">彭席彦 / Franky弗兰奇</div>
+                        </div>
+                        <div class="ch-r"><span></span></div>
+                    </div>
+                </div>
+                <div class="hot-music">
+                    <div class="sg">01</div>
+                    <div class="music-content">
+                        <div class="ch-l">
+                            <div class="music-name">再见莫妮卡</div>
+                            <div class="singer">彭席彦 / Franky弗兰奇</div>
+                        </div>
+                        <div class="ch-r"><span></span></div>
+                    </div>
+                </div>
+                <div class="hot-music">
+                    <div class="sg">01</div>
+                    <div class="music-content">
+                        <div class="ch-l">
+                            <div class="music-name">再见莫妮卡</div>
+                            <div class="singer">彭席彦 / Franky弗兰奇</div>
+                        </div>
+                        <div class="ch-r"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.main .nav-list {
+    color: red;
+}
+
+.nav-list li {
+    float: left;
+    list-style: none;
+}
+
+.nav-list .nav-other {
+    color: green;
+    display: none;
+}
+
+.nav-list .nav-other li {
+    float: none;
+}
+
+.nav-list > li:hover .nav-other {
+    display: block;
+}
+
+section article {
+    background-color: grey;
+    margin: 100px 0 50px 0;
+    color: palevioletred;
+}
+
+section article h2 {
+    color: red;
+}
+
+.main .one-article ~ article h2 {
+    color: black;
+}
+
+.main .one-article + article h2 {
+    color: indianred;
+}
+
+section article .num {
+    color: #ff5000;
+}

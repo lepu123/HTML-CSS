@@ -1,0 +1,32 @@
+.supermarket-wrapper {
+    /* 清除浮动文字四周环绕 */
+    clear: both;
+    margin-bottom: 30px;
+}
+
+.supermarket-list { 
+    /* 清除浮动隐藏超过父容器的 */
+    overflow: hidden;
+}
+
+.supermarket-item {
+    margin-right: 10px;
+    width: 220px;
+    float: left;
+}
+.supermarket-item img {
+    margin-bottom: 10px;
+    border-radius: 19px;
+}
+.supermarket-item p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.supermarket-item .good-price{
+    font-size: 20px;
+    margin-top: 5px;
+    line-height: 24px;
+    color: #ff5000;
+}
+

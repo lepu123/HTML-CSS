@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./color.css">
+    <style>
+        /*表单元素获取光标时,a链接被点击时也会触发*/
+        :focus {
+            background-color: #2dffb7;
+        }
+
+        /*root表示html元素,我们在现在的开发中使用该伪类选择器引用使用var*/
+        p {
+            color: var(--text2);
+        }
+
+        p:hover {
+            color: var(--theme_blue);
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--theme_blue);
+        }
+
+        a:link {
+            color: var(--theme_blue);
+        }
+
+        a:visited {
+            color: var(--text2);
+        }
+
+        /*表示没有子元素且不包含任何文本内容的元素,单一型元素永远符合该条件*/
+        /*:empty {*/
+        /*    border: 1px solid #fc0;*/
+        /*}*/
+
+        /*  表示未禁用的表单元素  */
+        :enabled {
+            padding: 10px;
+        }
+
+        /*  表示禁用的表单元素  */
+        :disabled {
+            padding: 5px;
+            border: 2px solid red;
+        }
+
+        /*  单复选框被勾选的状态  */
+        :checked {
+            width: 20px;
+            height: 20px;
+        }
+
+        /*  反选 not(css选择器)  */
+        /*:not(:empty) {*/
+        /*    border: 2px solid #000;*/
+        /*}*/
+
+        /*  :target 被激活的锚点元素a对应的设置id的元素  */
+        :target {
+            background-color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+<label>
+    <input type="text">
+</label>
+<label><input type="checkbox"></label>
+<p>hello world</p>
+
+<a href="#生活">生活</a>
+<a href="#推荐">推荐</a>
+
+<h2 id="生活">生活</h2>
+<div></div>
+<h2 id="推荐">推荐</h2>
+<div></div>
+</body>
+</html>

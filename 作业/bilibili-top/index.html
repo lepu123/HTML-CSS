@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        body {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-width: 1100px;
+        }
+
+        header {
+            width: 100%;
+        }
+
+        .bili-header {
+            position: relative;
+            width: 100%;
+            height: 155px;
+            background-image: url("./image/background-img.jpg@3840w_360h_1c_90q.webp");
+            background-size: 100% 155px;
+            background-repeat: no-repeat;
+        }
+
+        .bili-header .bili-logo {
+            display: block;
+            position: absolute;
+            width: 162px;
+            height: 78px;
+            left: 53px;
+            bottom: 10px;
+        }
+
+        .bili-header .right-content,
+        .bili-header .left-content {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .bili-header .right-content {
+            position: absolute;
+            right: 0;
+        }
+
+        .bili-header .right-content li,
+        .bili-header .left-content li {
+            display: inline-block;
+            height: 64px;
+            line-height: 64px;
+            margin-right: 10px;
+        }
+
+        .bili-header .right-content li {
+            margin-right: 30px;
+        }
+
+
+        .bili-header .left-content li .down,
+        .bili-header .left-content li .ten,
+        .bili-header .left-content li .tv {
+            overflow: hidden;
+            vertical-align: middle;
+        }
+
+
+        .bili-header-bar {
+            position: absolute;
+            padding: 0 24px;
+            width: 100%;
+            height: 64px;
+            top: 0;
+        }
+
+        .center-content {
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            max-width: 500px;
+            min-width: 150px;
+            height: 40px;
+            opacity: .9;
+            transition: background-color .3s;
+            border-radius: 8px;
+            background-color: #f1f2f3;
+        }
+
+        .center-content .search-input {
+            padding-right: 8px;
+            width: 301px;
+            height: 40px;
+            border: none;
+            background-color: transparent;
+            color: #61666d;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .button {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 7px;
+
+        }
+
+        .r-img {
+            display: block;
+        }
+
+        @media screen and (max-width: 1279.9px) {
+            .bili-header .right-content li {
+                font-size: 0;
+            }
+
+            .tou-gao {
+                display: inline-block;
+                position: absolute;
+                top: 40px;
+                right: 0;
+                width: 100px;
+                background-image: url("./image/t2.PNG");
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+
+        @media screen and (min-width: 1280px) {
+            .tou-gao {
+                display: inline-block;
+                position: absolute;
+                top: 40px;
+                right: 0;
+                width: 100px;
+                background-image: url("./image/t.PNG");
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="bili-header">
+        <img class="bili-logo" src="./image/logo.png" alt="logo">
+        <div class="bili-header-bar">
+            <ul class="left-content">
+                <li><img class="tv" src="./image/small_tv.PNG" width="20px" height="19px" alt="tv">首页</li>
+                <li>番剧</li>
+                <li>游戏中心</li>
+                <li>会员购</li>
+                <li>漫画</li>
+                <li>赛事</li>
+                <li><img class="ten" src="./image/ten.png" width="54px" height="36px" alt="ten"></li>
+                <li><img class="down" src="./image/download.PNG" width="20px" height="18px" alt="">下载客户端</li>
+            </ul>
+            <div class="center-content">
+                <input class="search-input" type="text" placeholder="罪恶都市但是大学真人版">
+                <img class="button" src="./image/button.PNG">
+            </div>
+            <ul class="right-content">
+                <li><img class="r-img" src="./image/d.PNG" alt="d">大会员</li>
+                <li><img class="r-img" src="./image/x.PNG" alt="d">消息</li>
+                <li><img class="r-img" src="./image/d.PNG" alt="d">动态</li>
+                <li><img class="r-img" src="./image/s.PNG" alt="d">收藏</li>
+                <li><img class="r-img" src="./image/l.PNG" alt="d">历史</li>
+                <li><img class="r-img" src="./image/c.PNG" alt="d">创作中心</li>
+                <li class="tou-gao"></li>
+            </ul>
+        </div>
+    </div>
+</header>
+</body>
+</html>

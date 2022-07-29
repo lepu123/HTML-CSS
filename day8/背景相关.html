@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #e5e5e5;
+        }
+
+        .box {
+            width: 100%;
+            height: 250px;
+            background-color: skyblue;
+            /*设置元素背景颜色*/
+            /*
+                指定元素的背景图片，背景图片默认不会适应当前元素的大小，默认情况下背景图片从元素左上角对齐平铺，如果图片过大我们只能看到图片的一部分
+                注意:背景图片是在背景颜色上方
+            */
+            /*background-image: url("./image/preview.png");*/
+
+            /*
+                控制背景图片的评估
+                repeat      表示x轴和y轴的重复平铺
+                repeat-x    表示只有x轴重复平铺
+                repeat-y    表示只有y轴重复平铺
+                no-repeat   表示图片不平铺
+            */
+
+            /*background-repeat: no-repeat;*/
+
+            /*
+                控制图片大小 语法
+                1. background-size: width height;
+                    可以设置宽度width和高度height;
+                2. background-size: cover;
+                    保证图片宽高比的情况下占满盒子区域，该属性可能会导致图片部分超过盒子
+                3. background-size: contain;
+                    保证图片宽高比的情况下适应盒子区域，该属性会导致图片与父容器之间存在留白
+            */
+
+
+            /*
+                background-position: 允许你对背景图片进行定位，让图片移动到当前容器的指定位置
+                grammar
+                    background-position: x;
+                    background-position: x y;
+                    x,y支持像素/百分比/关键字(center居中\left左端\right右端)
+            */
+
+            /*background-size: 100% 100%;*/
+
+            /*
+                background-origin: 背景定位,background-position 相对于什么位置进行定位
+                    padding-box(默认) 背景图像相对于内边距框左上角来定位
+                    border-box  背景图像相对于边框盒左上角来定位
+                    content-box 元素内容区域不包括padding区域进行定位
+            */
+
+            /*
+                background-clip 指定背景图片的显示区域
+                    padding-box(默认) 背景绘制区域包含padding content
+                    border-box  背景绘制区域包含border padding content
+                    content-box 背景绘制区域包含content
+            */
+
+            /*
+            background属性是以下属性的合并简写形式：
+            background-color
+            background-image
+            background-attachment
+            background-position
+            background-size
+            background-repeat
+            background-origin
+            background-clip
+            注意：background一些规则，需要在简写背景属性时遵循，例如:
+                    background-color 只能开头指定。
+                    background-size 值只能包含在背景位置之后，用’/'字符分隔，例如：center/80%。
+                    不需要设置的属性可以省略
+            */
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+
+</div>
+</body>
+</html>

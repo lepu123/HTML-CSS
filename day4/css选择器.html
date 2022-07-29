@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*多个选择起来连在一起没有空格或其他符号隔开,并且派生选择器.获取页面中同时满足以上所有拼接在一起的选择器要求元素*/
+        .tab span.tab-item {
+            color: #73ff39;
+        }
+
+        /*子元素选择器,选择器1 > 选择器2 表示获取选择器2且选择器2是选择器1的直接子元素*/
+        p > strong {
+            background-color: blue;
+        }
+
+        /*相邻兄弟选择器*/
+        .lyric li,
+        .title {
+            background-color: rgba(147, 147, 147, 0.5);
+        }
+
+        .lyric .active {
+            color: rgba(147, 147, 147, 1);
+            font-weight: 600;
+        }
+
+        /*相邻兄弟选择器,选择器1 + 选择器2,选择与选择器1有相同父元素并且紧挨着的的下一个兄弟元素*/
+        .lyric .active + li {
+            color: rgba(147, 147, 147, 0.8);
+        }
+
+        /*HTML5 兄弟选择器,匹配与当前元素拥有相同父元素并且在当前元素之后的所有兄弟元素*/
+        .lyric .active ~ li {
+            color: rgba(147, 147, 147, 0.8);
+        }
+    </style>
+</head>
+<body>
+<p>
+    <strong>123</strong>
+</p>
+<div class="tab">
+    <span class="tab-item">微信</span>
+    <span class="tab-item">通讯录</span>
+    <span class="tab-item active">发现</span>
+    <span class="tab-item">我</span>
+</div>
+
+<ul class="lyric">
+    <li>歌词1</li>
+    <li>歌词2</li>
+    <li class="active">歌词3</li>
+    <li>歌词4</li>
+    <li>歌词5</li>
+    <li>歌词6</li>
+</ul>
+
+<h2 class="title">标签</h2>
+</body>
+</html>

@@ -1,0 +1,124 @@
+.app {
+    width: 100vw;
+    min-height: 100vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.app .home-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100vw;
+    height: 13.3vw;
+    padding: 0 4vw;
+    background: linear-gradient(135deg,#ffd000,#ffbd00);
+}
+
+.c-header .h-city {
+    display: flex;
+    align-items: center;
+    margin-right: 4vw;
+    flex-shrink: 0;
+    font-size: 3.7vw;
+}
+
+.c-header .h-city img {
+    width: 2.1vw;
+    margin-left: 1.3vw;
+
+}
+
+.c-header .h-search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 8.5vw;
+    padding: 0 3.5vw;
+    border-radius: 2.1vw;
+    background-color: #fff;
+}
+
+.c-header .h-search img {
+    width: 3.7vw;
+    margin-right: 1.6vw;
+}
+
+.c-header .h-search input {
+    width: 50vw;
+    height: 4.5vw;
+    font-size: 3.5vw;
+    line-height: 6vw;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.c-header .operate-wrap {
+    margin-left: 4vw;
+    flex-shrink: 0;
+}
+
+.c-header .operate-wrap img {
+    width: 6.4vw;
+}
+
+.guide-app {
+    display: flex;
+    width: 100vw;
+    padding: 2.1vw 4vw;
+    background-color: #000;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.guide-app .g-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.guide-app .g-content img {
+    width: 9.6vw;
+}
+
+.guide-app .g-content .content-warp {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.7vw;
+    color: #fff;
+}
+
+.guide-app .g-content .content-warp span:first-child {
+    font-size: 3.5vw;
+    font-weight: 600;
+}
+
+.guide-app .g-content .content-warp span:last-child {
+    font-size: 2.9vw;
+    padding-top: 0.8vw;
+}
+
+.guide-app .guide-btn {
+    border: none;
+    height: 8vw;
+    padding: 0 2.1vw;
+    background: linear-gradient(135deg,#ffd000,#ffbd00);
+    border-radius: 1.9vw;
+    font-size: 3.2vw;
+    color: #000;
+}
+
+.guide-app .guide-btn:active {
+    background: linear-gradient(135deg,#ffdb3a,#ba8a00);
+}

@@ -1,0 +1,38 @@
+
+.international-item {
+    /* 方便子元素定位 */
+    position: relative;
+    height: 296px;
+    float: left;
+    width: 230px;
+}
+.international-item p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.international-item img{
+    border-radius: 19px;
+}
+.international-item .item-title-box {
+    position: absolute;
+    bottom: 20px;
+    padding: 15px ;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 0 10px 10px 0;
+}
+
+.international-item .item-title-box .item-title-left {
+    display: inline-block;
+    border-right: 1px solid #fff;
+    width: 40px;
+    font-size: 17px;
+}
+.international-item .item-title-box .item-title-right{
+    display: inline-block;
+    font-size: 17px;
+}
+.international-item .item-title-box .item-title-right span{
+    font-size: 10px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        /*
+        在开发中每一个都是一个盒子,盒子模型由四个部分组成
+        1.外边距   margin
+        2.边框    border
+        3.内边距   padding
+        4.内容    content
+        */
+
+        div {
+            /*
+            异常盒子模型
+            box-sizing指定盒子模型 默认值content-box,在这种盒子模型中,width和height指的是盒子content区域的宽高
+            border-box 这种异常盒子模型中,width和height指的是盒子content + padding + border的总宽高
+            这种异常盒子模型在开发中常用
+            */
+
+            /*margin: 0 auto;*/
+            /*border: 1px solid #eee;*/
+            /*padding: 20px 19px;*/
+            /*width: 230px;*/
+            /*height: 120px;*/
+        }
+
+        .tail {
+            width: 0;
+            height: 0;
+            border-left: 0;
+            border-right: 10px solid #00aaee;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+        }
+    </style>
+</head>
+<body>
+<div>Hello World</div>
+<div class="tail"></div>
+</body>
+</html>

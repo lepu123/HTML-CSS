@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .new-table th,
+        .new-table td,
+        .new-table {
+            border-spacing: 0;
+            border: 1px solid black;
+        }
+
+        .sky-blue {
+            background-color: skyblue;
+        }
+        .green-yellow {
+            background-color: greenyellow;
+        }
+        .deep-blue {
+            background-color: deepskyblue;
+        }
+        .orange {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+<!--
+    col,colgroup 只能通过css设置，border,background width visibility
+-->
+<table class="new-table">
+    <caption>Specification values: Steel, Castings, Ann.A.S.T.M.A27-16,Class B;* P max. 0.06; S max. 0.05</caption>
+    <colgroup class="sky-blue"></colgroup>
+    <col class="green-yellow">
+    <colgroup span="2" class="deep-blue"></colgroup>
+    <col span="2" class="orange">
+    <thead>
+    <tr>
+        <th rowspan="2">Grade</th>
+        <th rowspan="2">Yield Point.</th>
+        <th colspan="2">Ultimate tensile strength</th>
+        <th rowspan="2">Per cent e long. 50.8 mm or 2 in.</th>
+        <th rowspan="2">Per cent area</th>
+    </tr>
+    <tr>
+        <th>kg/mm&sup2;</th>
+        <th>lb/in&sup2;</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Hard</td>
+        <td>0.45 ultimate</td>
+        <td>56.2</td>
+        <td>80,000</td>
+        <td>15</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>Medium</td>
+        <td>0.45 ultimate</td>
+        <td>46.2</td>
+        <td>70,000</td>
+        <td>22</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td>Soft</td>
+        <td>0.45 ultimate</td>
+        <td>49.2</td>
+        <td>60,000</td>
+        <td>25</td>
+        <td>30</td>
+    </tr>
+
+    </tbody>
+</table>
+</body>
+</html>

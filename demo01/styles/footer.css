@@ -1,0 +1,85 @@
+.footer{
+    border-top: 120px;
+    width: 100%;
+    border-top: 2px solid #d3d3d3;
+}
+
+
+
+.footer .supports{
+    margin: 25px auto;
+    height: 100px;
+    width: 1190px;
+}
+
+
+.footer .footer-nav {
+    margin: 0 auto;
+    width: 1190px;
+    height: 213px;
+    border-top: 1px solid #d3d3d3;
+}
+
+.footer .supports .supports-item{
+    height: 100px;
+    width: 297px;
+    float: left;
+}
+
+.footer .supports .supports-item .supports-item-left{
+    height: 44px;
+    width: 44px;
+    float: left;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 3.5px solid red;
+    margin: 25px 10px 0 50px;
+}
+
+.footer .supports .supports-item .supports-item-left p{
+    text-align: center;
+    color: red;
+}
+.footer .supports .supports-item .supports-item-right{
+    float: left;
+    margin-top: 25px;
+    height: 42px;
+    
+}
+.right-top{
+    font-size: 18px ;
+    font-weight: bold;
+}
+.right-bottom{
+    margin-top: 3px;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.fnav-dl {
+    margin-top: 20px;
+    float: left;
+    width: 186px;
+    padding-left: 52px;
+}
+
+.fnav-span {
+    color: #646464;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.fnav-a {
+    text-decoration: none;
+    color: #8b8b8b;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.fnav-a:hover{
+    text-decoration: underline;
+}
+
+.footer-nav dl dd img{
+    width: 105px;
+    height: 105px;
+}

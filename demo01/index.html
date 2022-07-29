@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./styles/mainpage.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/supermarket.css">
+    <link rel="stylesheet" href="./styles/international.css">
+    <link rel="stylesheet" href="./styles/guess.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/footer-copyright.css">
+    <link rel="stylesheet" href="./styles/statement-bottom.css">
+</head>
+<body>
+    <!-- 代码的保存 ctrl + s -->
+    <div class="nav-wrap">
+        <div class="nav">
+            <!-- 将图标使用i标签展示，目的防止用户下载，需要用到css设置图片 -->
+            <p class="float-l nav-title"> <i class="home-logo"></i>天猫首页</p>
+            <p class="float-l register">
+                <em>喵，欢迎来天猫</em>
+                <a
+                    href="https://login.taobao.com/?spm=875.7931836.0.0.66144265VKXPuY&redirectURL=https%3A%2F%2Fwww.tmall.com%2F">请登录</a>
+                <a href="https://register.tmall.com/?spm=875.7931836.0.0.66144265VKXPuY">免费注册</a>
+            </p>
+            <ul class="float-r nav-list">
+                <li class="float-l"><a href="#">我的淘宝</a></li>
+                <li class="float-l"><i class="shop-car"></i><a href="#">购物车</a></li>
+                <li class="float-l"><a href="#">收藏夹</a></li>
+                <li class="float-l"><i class="phone-icon"></i><a href="#">手机版</a></li>
+                <li class="float-l"><a href="#">淘宝网</a></li>
+                <li class="float-l"><a href="#">网页无障碍</a></li>
+                <li class="float-l"><a href="#">商家支持</a></li>
+                <li class="float-l"><a href="#">商家中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 除头部导航以外的内容区域 -->
+    <div class="container">
+        <!-- 搜索栏 -->
+        <div class="search-wrap">
+            <img class="logo float-l" src="./images/logo.png" alt="">
+
+            <div class="search-bar float-l">
+                <input type="text" placeholder="搜索 天猫 商品/品牌/店铺">
+                <div class="search float-r">搜索</div>
+            </div>
+        </div>
+        <div class="goods-wrapper">
+            <div class="theme-menu float-l">
+                <h3 class="menu-title">主题市场</h3>
+                <ul class="menu-list">
+                    <li class="menu-list-item"><i class="icon dress"></i>女装 / 内衣</li>
+                    <li class="menu-list-item"><i class="icon short-sleeve"></i>男装 / 运动户外</li>
+                    <li class="menu-list-item"><i class="icon shoes"></i>女鞋 / 男鞋 / 箱包</li>
+                    <li class="menu-list-item"><i class="icon lipstick"></i>美妆 / 个人护理</li>
+                    <li class="menu-list-item"><i class="icon diamond"></i>腕表 / 眼睛 / 珠宝饰品</li>
+                    <li class="menu-list-item"><i class="icon cell-phone"></i>手机 / 数码 / 电脑办公</li>
+                    <li class="menu-list-item"><i class="icon baby-car"></i>母婴玩具</li>
+                    <li class="menu-list-item"><i class="icon noddles"></i>零食 / 茶酒 / 进口食品</li>
+                    <li class="menu-list-item"><i class="icon cherry"></i>生鲜水果</li>
+                    <li class="menu-list-item"><i class="icon household"></i>大家电 / 生活电器</li>
+                    <li class="menu-list-item"><i class="icon building"></i>家具 / 灯具 / 卫浴</li>
+                    <li class="menu-list-item"><i class="icon car"></i>汽车 / 配件 / 用品</li>
+                    <li class="menu-list-item"><i class="icon sofa"></i>家纺 / 家饰 / 鲜花</li>
+                    <li class="menu-list-item"><i class="icon medicine"></i>医药保健</li>
+                    <li class="menu-list-item"><i class="icon coffee"></i>厨具 / 收纳 / 宠物</li>
+                    <li class="menu-list-item"><i class="icon lock"></i>图书影像</li>
+                </ul>
+            </div>
+            <div class="goods-banner float-r">
+                <!-- 横向分类列表 -->
+                <div class="tmall-types">
+                    <a href="#">
+                        <img src="./images/tmall-super-market.png" alt="天猫超市">
+                    </a>
+                    <a href="#">
+                        <img src="./images/tmall-international.png" alt="天猫国际">
+                    </a>
+                    <a class="high-light" href="#">
+                        天猫会员
+                    </a>
+                    <a class="high-light" href="#">
+                        喵鲜生
+                    </a>
+                    <a class="high-light" href="#">
+                        医药馆
+                    </a>
+                    <a class="high-light" href="#">
+                        魅力惠
+                    </a>
+                    <a class="high-light" href="#">
+                        飞猪旅行
+                    </a>
+                    <a class="high-light" href="#">
+                        苏宁易购
+                    </a>
+                    <a class="high-light" href="#">
+                        天猫内容
+                    </a>
+                </div>
+                <!-- 下方轮播图 + 个人信息模块  -->
+                <div class="banner-desc">
+                    <!-- 轮播图容器 -->
+                    <div class="banner-wrapper float-l">
+                        <div class="big-carousel">
+                            <img src="./images/banner01.webp">
+                            <span class="btn btn-left">
+                                <img src="./images/lt-btn.webp"></span>
+                            <span class="btn btn-right">
+                                <img src="./images/gt-btn.webp">
+                            </span>
+                            <div class="page-control">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+
+                        <div class="small-carouser">
+
+                            <img src="./images/small-banner01.webp" class="float-l" alt="奥妙低至9.9元">
+                            <img src="./images/small-banner02.webp" class="float-r" alt="百事可乐低至9.9元">
+
+                            <span class="btn btn-left">
+                                <img src="./images/lt-btn.webp" alt="prev">
+                            </span>
+                            <span class="btn btn-right">
+                                <img src="./images/gt-btn.webp" alt="next">
+                            </span>
+                        </div>
+                    </div>
+                    <!-- 个人信息容器 -->
+                    <div class="user-desc float-r">
+                        <div class="avatar">
+                            <img src="./images//user-avatar.jpg">
+                        </div>
+                        <p class="ra-text">
+                            <a href="">Hi!你好</a>
+                        </p>
+                        <div class="desc-img">
+                            <img src="./images/desc-bannerwebp.webp">
+                        </div>
+                        <div class="notice-top">
+                            <span>公告</span>新鲜事儿都在这里~
+                        </div>
+                        <div class="notice-hot">
+                            <span>热点</span>设计创想家3D设计服务大赛来袭!
+                        </div>
+                        <div class="notice-hot">
+                            <span>热点</span>全球新发现,毫无开枪就现在!
+                        </div>
+                        <div class="notice-hot">
+                            <span>热点</span>万款新品流行速递抢先看!
+                        </div>
+                        <div class="user-tabbar">
+                            <div class="tabbar-item float-l">
+                                <div class="tab-icon">
+                                    <img src="./images/star.svg" alt="">
+                                </div>
+
+                                <span>收藏的宝贝</span>
+                            </div>
+                            <div class="tabbar-item float-l">
+                                <div class="tab-icon">
+                                    <img src="./images/bag.svg" alt="">
+                                </div>
+                                <span>买过的店铺</span>
+                            </div>
+                            <div class="tabbar-item float-l">
+                                <div class="tab-icon">
+                                    <img src="./images/shop.svg" alt="">
+                                </div>
+
+                                <span>收藏的店铺</span>
+                            </div>
+                            <div class="tabbar-item float-l" style="margin-right: 0;">
+                                <div class="tab-icon">
+                                    <img src="./images/clock.svg" alt="">
+                                </div>
+                                <span>我的足迹</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- tmallsupermarket -->
+            <div class="supermarket-wrapper float-l">
+                <h2><img src="./images/tmalltitle.webp" alt="天猫超市"></h2>
+                <div class="supermarket-list">
+                    <div class="supermarket-item ">
+                        <img src="./images/bluemoon.webp" alt="蓝月亮">
+                        <p class="good-title">蓝月亮亮白洗衣液机洗整箱批促销组合装6kg自然清香家用持久护理</p>
+                        <p class="good-price">￥99.9</p>
+                    </div>
+                    <div class="supermarket-item">
+                        <img src="./images/corn starch.webp" alt="玉米淀粉">
+                        <p class="good-title">吉得利食用玉米淀粉180g*1袋烘焙原料嫩肉烹饪勾芡凑单家用生粉</p>
+                        <p class="good-price">￥3</p>
+                    </div>
+                    <div class="supermarket-item">
+                        <img src="./images/briefsbriefs.webp" alt="男士内裤">
+                        <p class="good-title">【单品包邮】南极人内裤男士纯棉抗菌透气平角裤大码四角裤底裤衩</p>
+                        <p class="good-price">￥29.9</p>
+                    </div>
+                    <div class="supermarket-item">
+                        <img src="./images/pad.webp" alt="卫生巾">
+                        <p class="good-title">七度空间优雅姨妈卫生巾日夜用组合装正品超薄官方店旗舰76片整箱</p>
+                        <p class="good-price">￥59.9</p>
+                    </div>
+                    <div class="supermarket-item">
+                        <img src="./images/shoe brush.webp" alt="鞋刷">
+                        <p class="good-title">千屿多功能家用鞋刷清洁刷浴室刷厨房洗地刷洗衣刷除尘刷长柄刷子</p>
+                        <p class="good-price">￥4.9</p>
+                    </div>
+                    <div class="supermarket-item">
+                        <img src="./images/tissue.webp" alt="纸巾">
+                        <p class="good-title">洁柔抽纸粉Face立体压花纸巾3层100抽12包家庭用卫生纸加厚餐巾纸</p>
+                        <p class="good-price">￥29.9</p>
+                    </div>
+                    <div class="supermarket-item">
+                        <img src="./images/cooking wine.webp" alt="料酒">
+                        <p class="good-title">恒顺料酒2L*1桶厨房家用去腥解膻好鲜味烹饪鸡鸭鱼肉海鲜等</p>
+                        <p class="good-price">￥23.9</p>
+                    </div>
+                    <div class="supermarket-item">
+                        <img src="./images/power bank.webp" alt="充电宝">
+                        <p class="good-title">倍思充电宝10000毫安小巧便携自带线手机移动电源适用于苹果华为</p>
+                        <p class="good-price">￥89</p>
+                    </div>
+                    <div class="supermarket-item">
+                        <img src="./images/bluemoonpro.webp" alt="蓝月亮加大版">
+                        <p class="good-title">【加量不加价】蓝月亮亮白洗衣液薰衣草家用6.5kg促销留香官方</p>
+                        <p class="good-price">￥99.9</p>
+                    </div>
+                    <div class="supermarket-item">
+                        <img src="./images/gift package.webp" alt="礼盒">
+                        <p class="good-title">蒙牛真果粒礼盒装250g*24盒/整箱牛奶饮品礼盒装牛奶饮品真实果粒</p>
+                        <p class="good-price">￥74.9</p>
+                    </div>
+                </div>
+            </div>
+            <!-- tmallinternational -->
+            <div class="tmallinternational float-l">
+                <h2><img src="./images/tmallguoji.webp" alt="天猫国际"></h2>
+                <div class="international-list">
+                    <div class="international-item">
+                        <img src="./images/top1.webp" alt="1">
+                        <div class="item-title-box">
+                            <div class="item-title-left">进口精选</div>
+                            <div class="item-title-right">
+                                大牌好货<br>
+                                <span>轻松购入</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="international-item">
+                        <img src="./images/3lab.webp" alt="3lab化妆品">
+                        <p>官方直营优选</p>
+                        <p>极致购物感受</p>
+                    </div>
+                    <div class="international-item">
+                        <img src="./images/facial cleanser.webp" alt="洗面奶">
+                        <p>细步野洗面奶男女深层控油温和清洁毛孔日本氨基酸洁面乳敏感100g</p>
+                        <p>￥129</p>
+                    </div>
+                    <div class="international-item">
+                        <img src="./images/pad 2.webp" alt="卫生巾">
+                        <p>叽叽叽叽叽叽叽叽寄寄寄寄寄寄</p>
+                        <p>￥129</p>
+                    </div>
+                    <div class="international-item">
+                        <img src="./images/vespv.webp" alt="123">
+                        <p>叽叽叽叽叽叽叽叽寄寄寄寄寄寄</p>
+                        <p>￥129</p>
+                    </div>
+                    <div class="international-item">
+                        <img src="./images/top2.webp" alt="1234">
+                        <div class="item-title-box">
+                            <div class="item-title-left">直营品质</div>
+                            <div class="item-title-right">
+                                放心体验<br>
+                                <span>畅享全</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="international-item">
+                        <img src="./images/milk powder.webp" alt="奶粉">
+                        <p>叽叽叽叽叽叽叽叽寄寄寄寄寄寄</p>
+                        <p>￥23.9</p>
+                    </div>
+                    <div class="international-item">
+                        <img src="./images/meizhuangdan.webp" alt="美妆蛋">
+                        <p>叽叽叽叽叽叽叽叽寄寄寄寄寄寄</p>
+                        <p>￥23.9</p>
+                    </div>
+                    <div class="international-item">
+                        <img src="./images/sunglasses.webp" alt="墨镜">
+                        <p>叽叽叽叽叽叽叽叽寄寄寄寄寄寄</p>
+                        <p>￥23.9</p>
+                    </div>
+                    <div class="international-item">
+                        <img src="./images/Cleansing instrument.webp" alt="洁面仪">
+                        <p>叽叽叽叽叽叽叽叽寄寄寄寄寄寄</p>
+                        <p>￥23.9</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 猜你喜欢 -->
+            <div class="guess-wrapper float-l">
+                <h2 class="guess-title">猜你喜欢<span class="label">个性推荐</span></h2>
+                <div class="guess-goods-list">
+                    <div class="guess-good">
+                        <img src="./images/g1.webp">
+                        <p class="good-desc">李宁形体棍开肩开背神器儿童驼背站姿矫正十字架瑜伽背部训练器材</p>
+                        <p class="good-price">￥89.0</p>
+                    </div>
+                    <div class="guess-good">
+                        <img src="./images/g2.webp">
+                        <p class="good-desc">飞科剃须刀官方旗舰店正品刮胡刀电动男士胡须刀充电式智能剃胡刀</p>
+                        <p class="good-price">￥89</p>
+                    </div>
+                    <div class="guess-good">
+                        <img src="./images/g3.webp">
+                        <p class="good-desc">维达超韧手帕纸4层8张18包小包餐巾纸卫生纸巾面巾纸抽纸新旧交替</p>
+                        <p class="good-price">￥89</p>
+                    </div>
+                    <div class="guess-good">
+                        <img src="./images/g4.webp">
+                        <p class="good-desc">【三只松鼠_坚果炒货零食组合】零食小吃休闲食品夜宵充饥宿舍</p>
+                        <p class="good-price">￥89</p>
+                    </div>
+                    <div class="guess-good">
+                        <img src="./images/g5.webp">
+                        <p class="good-desc">la有氧洗威露士内衣净洗衣液300ml内裤清洁去血渍除菌</p>
+                        <p class="good-price">￥89</p>
+                    </div>
+                    <div class="guess-good">
+                        <img src="./images/g6.webp">
+                        <p class="good-desc">维达抽纸超韧家用擦手纸卫生纸巾3层100抽10包面巾纸实惠餐巾纸i2</p>
+                        <p class="good-price">￥89</p>
+                    </div>
+                    <div class="guess-good">
+                        <img src="./images/g7.webp">
+                        <p class="good-desc">加量不加价la有氧洗威露士除菌洗衣液6L除螨99%新旧包装随机发</p>
+                        <p class="good-price">￥89</p>
+                    </div>
+                    <div class="guess-good">
+                        <img src="./images/g8.webp">
+                        <p class="good-desc">Apple/苹果 20W USB-C 电源适配器</p>
+                        <p class="good-price">￥89</p>
+                    </div>
+                    <div class="guess-good">
+                        <img src="./images/g9.webp">
+                        <p class="good-desc">全棉时代洗脸巾擦脸巾平纹洁面巾纯棉棉柔巾家用100抽*1包洗面巾</p>
+                        <p class="good-price">￥89</p>
+                    </div>
+                    <div class="guess-good">
+                        <img src="./images/g10.webp">
+                        <p class="good-desc">维达蓝色经典有芯卷纸4层160克10卷纸巾卫生纸卷筒纸手纸</p>
+                        <p class="good-price">￥89</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- 页面底部布局 -->
+    <div class="footer">
+        <div class="supports">
+            <div class="supports-item">
+                <div class="supports-item-left"><p>优</p></div>
+                <div class="supports-item-right">
+                    <p class="right-top">品质保证</p>
+                    <p class="right-bottom">品质护航 购物无忧</p>
+                </div>
+            </div>
+            <div class="supports-item">
+                <div class="supports-item-left"><p>七</p></div>
+                <div class="supports-item-right">
+                    <p class="right-top">七天无理由退换货</p>
+                    <p class="right-bottom">为您提供售后无忧保障</p>
+                </div>
+            </div>
+            <div class="supports-item">
+                <div class="supports-item-left"><p>特</p></div>
+                <div class="supports-item-right">
+                    <p class="right-top">服务体验</p>
+                    <p class="right-bottom">为你呈现不一样的服务</p>
+                </div>
+            </div>
+            <div class="supports-item">
+                <div class="supports-item-left"><p>帮</p></div>
+                <div class="supports-item-right">
+                    <p class="right-top">帮助中心</p>
+                    <p class="right-bottom">您的购物指南</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <dl class="fnav-dl">
+                <dt class="fnav-dt">
+                    <span class="fnav-span">购物指南</span>
+                </dt>
+                <dd><a href="" class="fnav-a">免费注册</a></dd>
+                <dd><a href="" class="fnav-a">开通支付宝</a></dd>
+                <dd><a href="" class="fnav-a">支付宝充值</a></dd>
+            </dl>
+            <dl class="fnav-dl">
+                <dt class="fnav-dt">
+                    <span class="fnav-span">天猫保障</span>
+                </dt>
+                <dd><a href="" class="fnav-a">发票保障</a></dd>
+                <dd><a href="" class="fnav-a">售后规则</a></dd>
+                <dd><a href="" class="fnav-a">物流时效保障</a></dd>
+            </dl>
+            <dl class="fnav-dl">
+                <dt class="fnav-dt">
+                    <span class="fnav-span">支付方式</span>
+                </dt>
+                <dd><a href="" class="fnav-a">快捷支付</a></dd>
+                <dd><a href="" class="fnav-a">信用卡</a></dd>
+                <dd><a href="" class="fnav-a">余额宝</a></dd>
+                <dd><a href="" class="fnav-a">蚂蚁花呗</a></dd>
+            </dl>
+            <dl class="fnav-dl">
+                <dt class="fnav-dt">
+                    <span class="fnav-span">商家服务</span>
+                </dt>
+                <dd><a href="" class="fnav-a">天猫规则</a></dd>
+                <dd><a href="" class="fnav-a">商家入驻</a></dd>
+                <dd><a href="" class="fnav-a">商家中心</a></dd>
+                <dd><a href="" class="fnav-a">天猫必修课</a></dd>
+                <dd><a href="" class="fnav-a">喵言喵语</a></dd>
+                <dd><a href="" class="fnav-a">运营服务</a></dd>
+            </dl>
+            <dl class="fnav-dl">
+                <dt class="fnav-dt">
+                    <span class="fnav-span">手机天猫</span>
+                </dt>
+                <dd><img src="./images/erweima.png"></dd>
+            </dl>
+        </div>
+
+    </div>
+    <div class="statement-bottom">
+        <div class="statement-content">
+            <p class="tmall-info">
+                <a href="#" class="info-item">关于天猫</a>
+                <a href="#" class="info-item">商家服务大厅</a>
+                <a href="#" class="info-item">开放平台</a>
+                <a href="#" class="info-item">诚聘英才</a>
+                <a href="#" class="info-item">网站合作</a>
+                <a href="#" class="info-item">法律声明</a>
+                <a href="#" class="info-item">隐私权政策</a>
+                <a href="#" class="info-item">知识产权</a>
+                <a href="#" class="info-item">廉正举报</a>
+                <a href="#" class="info-item">不当竞争举报</a>
+                <a href="#" class="info-item"></a>           
+            </p>
+            <p class="other-info">
+                <a href="#" class="info-item">阿里巴巴集团</a> |
+                <a href="#" class="info-item">淘宝网</a> |
+                <a href="#" class="info-item">天猫</a> |
+                <a href="#" class="info-item">聚划算</a> |
+                <a href="#" class="info-item">全球速卖通</a> |
+                <a href="#" class="info-item">阿里巴巴国际交易市场</a> |
+                <a href="#" class="info-item">1688</a> |
+                <a href="#" class="info-item">阿里妈妈</a> |
+                <a href="#" class="info-item">飞猪</a> |
+                <a href="#" class="info-item">阿里云计算</a> |
+                <a href="#" class="info-item">AliOS</a> |
+                <a href="#" class="info-item">阿里通信</a> |
+                <a href="#" class="info-item">万网</a> |
+                <a href="#" class="info-item">高德</a> |
+                <a href="#" class="info-item">UC</a> |
+                <a href="#" class="info-item">友盟</a> |
+                <a href="#" class="info-item">虾米</a> |
+                <a href="#" class="info-item">钉钉</a> |
+                <a href="#" class="info-item">支付宝</a> |
+                <a href="#" class="info-item">阿里安全</a>
+            </p>
+            
+        </div>
+        <div class="footer-copyright">
+            <a href="#">增值电信业务经营许可证：浙B2-20110446</a>
+            <a href="#">市场名称登记证：工商网市字3301004119号</a>
+            <a href="#">出版物网络交易平台服务经营备案证： 新出发浙备字第2019002号</a>
+            <a href="#">互联网违法和不良信息举报电话：0571-81683755 jubao.tb@service.taobao.com</a>
+            <a href="#">中国互联网举报中心</a>
+            <a href="#">中国扫黄打非网</a>
+            <a href="#">全国文化和旅游市场网上举报投诉处理系统</a>
+            <a href="#">全国12315平台</a><br>
+            <a href="#">浙江省互联网违法和不良信息举报中心</a>
+            <a href="#">全网举报</a>
+            <a href="#">互联网药品信息服务资质证书编号：浙-（经营性）-2017-0005  </a>
+            <img src="./images/guohui1.png"><a href="#">浙公网安备 33010002000120号</a><br>
+            <a href="#">医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</a>
+            <a href="#">网络文化经营许可证：浙网文 [2021]1668-073号<img src="./images/guohui2.gif" class="footer-a-img"></a><br>
+            <a href="#">浙江省网络食品销售第三方平台提供者备案：浙网食A33010002 12318举报 浙B2-20110446-1</a>    
+        </div>
+    </div>
+</body>
+
+</html>

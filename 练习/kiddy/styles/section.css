@@ -1,0 +1,221 @@
+.site-section {
+    width: 100%;
+    height: 471px;
+    padding: 112px 0;
+}
+
+.site-section .section-con {
+    width: 1140px;
+    height: 247px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.site-section .section-con .col-left {
+    float: left;
+    width: 349px;
+    height: 247px;
+    margin: 0 10px;
+    background-color: #fd4d40;
+    padding: 40px;
+    text-align: center;
+}
+
+.site-section .section-con .col-left.yellow {
+    background-color: #fdb62f;
+}
+
+.site-section .section-con .col-left.yellow .lg-span {
+    background-color: #fdb62f;
+}
+
+.site-section .section-con .col-left.green {
+    background-color: #16c3b0;
+}
+
+.site-section .section-con .col-left.green .lg-span {
+    background-color: #16c3b0;
+}
+
+
+.site-section .section-con .col-left .lg-span {
+    display: block;
+    position: relative;
+    border-radius: 999px;
+    top: -80px;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    background-color: #fd4d40;
+}
+
+.site-section .section-con .col-left .lg-span img {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.section-two {
+    width: 100%;
+    height: 686px;
+    padding: 112px 0;
+    background-color: #f6f5f5;
+}
+
+.section-two .two-con {
+    width: 1140px;
+    height: 462px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-two .two-con img {
+    float: left;
+    width: 540px;
+    height: 462px;
+}
+
+.section-two .two-con .img-right {
+    float: left;
+    margin-left: 95px;
+    padding: 0 15px 0 48px;
+    width: 475px;
+    height: 462px;
+}
+
+.section-two .two-con .img-right span {
+    display: block;
+    color: #fd4d40;
+    height: 28px;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "Indie Flower", cursive;
+}
+
+.section-two .two-con .img-right h1 {
+    margin-bottom: 16px;
+    font-size: 28px;
+    width: 100%;
+    height: 33px;
+}
+
+.section-two .two-con .img-right p {
+    margin-bottom: 16px;
+    font-size: 18px;
+    width: 100%;
+    line-height: 30px;
+}
+
+.section-two .two-con .img-right p a {
+    background-color: #ffc107;
+}
+
+.section-three {
+    width: 100%;
+    height: 798px;
+    padding: 112px 0;
+    background-color: #17a2b8;
+}
+
+.section-three .three-con {
+    width: 1140px;
+    height: 574px;
+    margin: 0 auto;
+}
+
+.section-three .three-con .three-top {
+    text-align: center;
+    width: 100%;
+    height: 78px;
+    margin-bottom: 47px;
+}
+
+.section-three .three-con .three-top h2 {
+    height: 38px;
+    font-size: 32px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.section-three .three-con .three-top span {
+    display: block;
+    height: 24px;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.section-three .three-con .three-bottom {
+
+    width: 100%;
+    height: 447px;
+}
+
+.section-three .three-con .three-bottom .mog {
+    float: left;
+    border-radius: 8px;
+    width: 350px;
+    height: 100%;
+    margin: 0 15px;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.section-three .three-con .three-bottom .mog img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 30px;
+}
+
+.section-three .three-con .three-bottom .mog h3 {
+    text-align: center;
+    height: 21px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.section-three .three-con .three-bottom .mog p {
+    height: 128px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.mog-a {
+    display: block;
+    border-radius: 30px 0;
+    margin: 16px auto;
+    width: 152px;
+    height: 41px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    line-height: 41px;
+    letter-spacing: .2rem;
+}
+
+.section-three .three-con .three-bottom .mog.left h3 {
+    color: #16c3b0;
+}
+
+.section-three .three-con .three-bottom .mog.center h3 {
+    color: #71bc42;
+}
+
+.section-three .three-con .three-bottom .mog.right h3 {
+    color: #dc3545;
+}
+
+.section-three .three-con .three-bottom .mog.left .mog-a {
+    background-color: #dc3545;
+}
+
+.section-three .three-con .three-bottom .mog.center .mog-a {
+    background-color: #ffc107;
+}
+
+.section-three .three-con .three-bottom .mog.right .mog-a {
+    background-color: #71bc42;
+}

@@ -1,0 +1,29 @@
+/*字体颜色*/
+:root {
+    --theme-red: #dd001b;
+    --text-black: #333;
+    --text-grey: #888;
+}
+
+/*字体相关尺寸*/
+:root {
+    --hottime-text: 12px;
+    --tab-text: 15px;
+    --music-name: 17px;
+    --sub-title-text: 12px;
+    --rank-text: 17px;
+}
+
+.float-l {
+    float: left;
+}
+
+.float-r {
+    float: right;
+}
+
+.clear-float::after {
+    display: block;
+    clear: both;
+    content: '';
+}
